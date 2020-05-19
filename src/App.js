@@ -1,25 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
+import Title from './Title/Title'
+import Menu from './Menu/Menu'
+import Presentation from './Presentation/Presentation'
+import Folio from './Folio/Folio'
+import Footer from './Footer/Footer'
+import Box from '@material-ui/core/Box';
+import Image from './img/pathway-leading-to-the-hills-3646207.jpg'
+
 import './App.css';
+
+const styles = {
+  boxImage:{
+    height: '100vh',
+    backgroundImage:`url(${Image})`,
+    backgroundSize:'cover',
+
+  }
+}
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box  style={styles.boxImage} >
+      <Box m={2} >
+      <Title />
+      <Menu />
+      <Presentation />
+      <Folio />
+      <Footer />
+    </Box>  
+    </Box>
   );
 }
 
