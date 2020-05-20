@@ -1,11 +1,11 @@
 import React from 'react'
+import Box from '@material-ui/core/Box';
 
 function Title(title){
-    console.log(title)
     return(
-        <div>
-            <h1>{title.title}</h1>
-        </div>
+        <Box p={2} >
+            <h1 color="primary">{title.title}</h1>
+        </Box>
     )
 }
 

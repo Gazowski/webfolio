@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Rubik:wght@900&display=swap');
+
+/**
+* color : https://coolors.co/ac5faa-cfc165-fbbf2d-a206b8-b71955
+*/
+:root{
+    --FONT_TITLE : 'Rubik', sans-serif;
+    --FONT_TEXT :'Dosis', sans-serif;
+
+    --color1: hsla(71%, 29%, 67%, 1);
+    --color2: hsla(218%, 44%, 56%, 1);
+    --color3: hsla(335%, 76%, 99%, 1);
+    --color4: hsla(356%, 62%, 73%, 1);
+    --color5: hsla(251%, 72%, 35%, 1);
+}
+
+body{
+    font-family: var(--FONT_TEXT);
+}
+
+h1{
+    font-family: var(--FONT_TITLE);
+    color:#fff062;
+    font-size: 3em;
+    text-shadow: 0 5px #200225;
+}
