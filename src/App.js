@@ -8,9 +8,8 @@ import './App.css';
 /**
  * tuile titre
  */
-const title = [
-  {title : 'Gaël C.'},
-]
+const title =
+  {title : 'Gaël C.',}
 
 const styles = {
   boxImage:{
@@ -25,7 +24,7 @@ function App() {
   return (
     <Box  style={styles.boxImage} >
       <Box m={2} >
-      <Title title={title}/>
+      <Title {...title}/>
     </Box>  
     </Box>
   );
