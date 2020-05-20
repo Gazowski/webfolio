@@ -1,8 +1,12 @@
 import React from 'react'
 
-function Title(){
+function Title(title){
+    console.log(title)
     return(
-        <h1>Gaël C.</h1>
+        <div>
+        <h1>{title.title}</h1>
+        <h1>le titre</h1>
+        </div>
     )
 }
 
