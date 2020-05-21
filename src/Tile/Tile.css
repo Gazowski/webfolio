@@ -13,11 +13,12 @@ div.MuiPaper-root{
 }
 
 .tile h3{
-    grid-area:title;
     font-size: 1.8em;
+    grid-area:title;
     text-align: center;
 }
 
 .tile div{
     grid-area:content;
 }
+

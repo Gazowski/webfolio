@@ -3,7 +3,6 @@ import Title from './Title/Title'
 import Tile from './Tile/Tile'
 import ProfilContent from './Profil_Content/Profil_Content'
 import Box from '@material-ui/core/Box';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 import './App.css';
 
@@ -61,28 +60,14 @@ const PROFIL_CONTENT = {
    children : 'blablablablabla',
  }
 
-/**
- * STYLES
- */
-
-const theme = createMuiTheme({
-  palette : {
-    primary : {
-      main : 'hsla(71%, 29%, 67%, 1)',
-    }
-  },
-})
-
 function App() {
   return (
-    <MuiThemeProvider theme={theme}>
     <Box p={2}>      
-      <Title {...TITLE} {...STYLES}/>
+      <Title {...TITLE}/>
       <Tile {...PROFIL_SETTING} {...PROFIL_CONTENT} />
       <Tile {...MY_SITES_SETTING} {...MY_SITES_CONTENT} />
       <Tile {...MY_WORKS_SETTING} {...MY_WORKS_CONTENT} />
     </Box>
-    </MuiThemeProvider>
   );
 }
 
