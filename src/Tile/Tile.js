@@ -9,9 +9,12 @@ function Tile(tile){
         <Paper
             elevation={tile.elevation} 
             square>
-            <Box className = 'tile'  m={tile.margin} p={tile.padding}>
+            <Box 
+                className = {tile.class}  
+                m={tile.margin} 
+                p={tile.padding}>
                 <h3>{tile.title}</h3>
-                <p>{tile.content}</p>
+                <div>{tile.children}</div>
             </Box>
         </Paper>
     )

@@ -1,8 +1,8 @@
 import React from 'react';
 import Title from './Title/Title'
 import Tile from './Tile/Tile'
+import ProfilContent from './Profil_Content/Profil_Content'
 import Box from '@material-ui/core/Box';
-import Image from './img/lighted-up-alleyway-1294671.jpg'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 import './App.css';
@@ -11,7 +11,7 @@ import './App.css';
  * TITRE
  */
 const TITLE = {
-  title : 'Gaël C.',
+  title : 'Gaël_C',
 }
 
 /**
@@ -24,8 +24,9 @@ const PROFIL_SETTING = {
 }
 
 const PROFIL_CONTENT = {
-  title : 'Développeur Web',
-  content : 'blablablablbbla...'
+  class : 'tile profil',
+  title : 'Artisan du Web',
+  children : <ProfilContent />,
 }
 
 /**
@@ -39,8 +40,9 @@ const PROFIL_CONTENT = {
  }
 
  const MY_SITES_CONTENT = {
+   class : 'tile my_sites',
    title : 'Mes sites Internets',
-   content : 'blablablablabla',
+   children : 'blablablablabla',
  }
 
 /**
@@ -54,8 +56,9 @@ const PROFIL_CONTENT = {
  }
 
  const MY_WORKS_CONTENT = {
+   class : 'tile my_works',
    title : 'Mes Illustrations',
-   content : 'blablablablabla',
+   children : 'blablablablabla',
  }
 
 /**
@@ -70,21 +73,10 @@ const theme = createMuiTheme({
   },
 })
 
-const STYLES = {
-  boxImage:{
-    height: '100vh',
-    backgroundImage:`url(${Image})`,
-    background: `linear-gradient(180deg, rgba(58,3,66,.95) 1%, rgba(162,6,184,0) 67%),url(${Image})`,
-    backgroundSize:'contain',
-    //background: 'rgb(58,3,66)',
-
-  }
-}
-
 function App() {
   return (
     <MuiThemeProvider theme={theme}>
-    <Box  style={STYLES.boxImage} p={2}>      
+    <Box p={2}>      
       <Title {...TITLE} {...STYLES}/>
       <Tile {...PROFIL_SETTING} {...PROFIL_CONTENT} />
       <Tile {...MY_SITES_SETTING} {...MY_SITES_CONTENT} />

@@ -1,4 +1,23 @@
 div.MuiPaper-root{
     background-color: #fff062;
     color: #3e0159;
+    height: 320px;
+    min-width: 288px;
+    max-width: 320px;
+}
+
+.tile{
+    display: grid;
+    grid-template-areas:    'title'
+                            'content';
+}
+
+.tile h3{
+    grid-area:title;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.tile div{
+    grid-area:content;
 }
