@@ -1,8 +1,8 @@
 import React from 'react';
+import Grid from '@material-ui/core/Grid';
 import Title from './Title/Title'
 import Tile from './Tile/Tile'
 import ProfilContent from './Profil_Content/Profil_Content'
-import Box from '@material-ui/core/Box';
 
 import './App.css';
 
@@ -62,12 +62,19 @@ const PROFIL_CONTENT = {
 
 function App() {
   return (
-    <Box p={2}>      
-      <Title {...TITLE}/>
-      <Tile {...PROFIL_SETTING} {...PROFIL_CONTENT} />
-      <Tile {...MY_SITES_SETTING} {...MY_SITES_CONTENT} />
-      <Tile {...MY_WORKS_SETTING} {...MY_WORKS_CONTENT} />
-    </Box>
+    <div>
+    <Title {...TITLE}/>
+      <Grid
+        container
+        direction="column"
+        justify="flex-start"
+        alignItems='center'
+        spacing={5}> 
+        <Tile {...PROFIL_SETTING} {...PROFIL_CONTENT} />
+        <Tile {...MY_SITES_SETTING} {...MY_SITES_CONTENT} />
+        <Tile {...MY_WORKS_SETTING} {...MY_WORKS_CONTENT} />
+      </Grid>
+    </div>
   );
 }
 

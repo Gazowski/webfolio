@@ -1,0 +1,36 @@
+.title {
+    background: linear-gradient(0deg, rgba(58,3,66,.95) 25%, rgba(162,6,184,0) 90%),var(--IMAGE);
+    background-size:contain;
+    background-attachment:fixed;
+    height: 75vh;
+    width: 100vw;
+}
+
+
+.title h1{
+    font-family: var(--FONT_TITLE);
+    color:var(--yellow);
+    font-size: 3em;
+    margin-bottom: 0;
+    text-shadow: 0 5px #200225;
+}
+
+.title p{
+    background-color: #200225;
+    color:var(--yellow);
+    font-size: 1.5em;
+    margin-top: -.75rem;
+    padding:.5rem 1.5rem;
+}
+
+.image img{
+    width: 150px;
+    height:150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border:solid 10px #3e0159;
+    display: block;
+    margin:auto;
+    margin-bottom:1.5em;
+    transform:translateY(-50%);
+}

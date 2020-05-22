@@ -7,28 +7,20 @@
     --FONT_TITLE : 'Rubik', sans-serif;
     --FONT_TEXT :'Dosis', sans-serif;
     
-    --color1: hsla(71%, 29%, 67%, 1);
-    --color2: hsla(218%, 44%, 56%, 1);
-    --color3: hsla(335%, 76%, 99%, 1);
+    --violet: #3e0159;
+    --yellow: #fff062;
+    --pink: #b71955;
     --color4: hsla(356%, 62%, 73%, 1);
     --color5: hsla(251%, 72%, 35%, 1);
 
-    --IMAGE: url('./img/lighted-up-alleyway-1294671.jpg');
+    --IMAGE: url('./img/lighted-up-alleyway-blurred.jpg');
 }
 
 body{
     font-family: var(--FONT_TEXT);
     height: 100vh;
-    background: linear-gradient(180deg, rgba(58,3,66,.95) 1%, rgba(162,6,184,0) 67%),var(--IMAGE);
-    background-size:contain;
-    background-attachment:fixed;
+
 }
 
-h1{
-    font-family: var(--FONT_TITLE);
-    color:#fff062;
-    font-size: 3em;
-    text-shadow: 0 5px #200225;
-    text-align: center;
-}
+
 
