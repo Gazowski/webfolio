@@ -24,7 +24,6 @@ function Tile(tile){
                     className = {tile.class}  
                     p={tile.padding}>
                     <h3>{tile.title}</h3>
-                    <div>{tile.children}</div>
                 </Box>
             </Paper>
             <Paper
@@ -34,8 +33,8 @@ function Tile(tile){
                 <Box 
                     className = {tile.class}  
                     p={tile.padding}>
-                    <h3>mon profil</h3>
-                    <div>des info,des info</div>
+                    <h3>mes sites</h3>
+                    <div>{tile.children}</div>
                 </Box>
             </Paper>
             </div>

@@ -41,8 +41,8 @@ div.MuiPaper-root{
 }
 
 .cubeContainer .hiddenFace{
-    background-color: var(--pink);
-    color: var(--yellow);
+    background-color: var(--neutral);
+    color: var(--secondary);
 	position:absolute;
 	left:calc(100% - .5em);
 	width:calc(100% - 1em);

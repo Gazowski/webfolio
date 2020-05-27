@@ -3,6 +3,9 @@ import Grid from '@material-ui/core/Grid';
 import Title from './Title/Title'
 import Tile from './Tile/Tile'
 import ProfilContent from './Profil_Content/Profil_Content'
+import WebsiteLink from './Website_Link/Website_Link'
+import CubeButton from './Cube_Button/Cube_Button'
+import BlockContent from './Block_Content/Block_Content'
 
 import './App.css';
 
@@ -25,7 +28,7 @@ const PROFIL_SETTING = {
 const PROFIL_CONTENT = {
   class : 'tile profil',
   title : 'Artisan du Web',
-  children : <ProfilContent />,
+  text : 'blablasbalsavals',
 }
 
 /**
@@ -41,7 +44,7 @@ const PROFIL_CONTENT = {
  const MY_SITES_CONTENT = {
    class : 'tile my_sites',
    title : 'Mes sites Internets',
-   children : 'blablablablabla',
+   children : <WebsiteLink />,
  }
 
 /**
@@ -63,16 +66,33 @@ const PROFIL_CONTENT = {
 function App() {
   return (
     <div>
-    <Title {...TITLE}/>
+      <Title {...TITLE}/>
       <Grid
         container
         direction="column"
         justify="flex-start"
         alignItems='center'
-        spacing={5}> 
-        <Tile {...PROFIL_SETTING} {...PROFIL_CONTENT} />
+        spacing={10}
+        xs={12}>
+
+        <Grid
+          container
+          item
+          direction="column"
+          justify="flex-start"
+          alignItems='center'
+          spacing={0}
+          xs={12}>
+          <CubeButton text='Profil' />
+          <CubeButton text='Site Web' />
+          <CubeButton text='Illustrations' />
+        </Grid>
+
+        <BlockContent {...PROFIL_CONTENT} />
+
+        {/* <Tile {...PROFIL_SETTING} {...PROFIL_CONTENT} />
         <Tile {...MY_SITES_SETTING} {...MY_SITES_CONTENT} />
-        <Tile {...MY_WORKS_SETTING} {...MY_WORKS_CONTENT} />
+        <Tile {...MY_WORKS_SETTING} {...MY_WORKS_CONTENT} /> */}
       </Grid>
     </div>
   );

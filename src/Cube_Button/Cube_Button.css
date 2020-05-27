@@ -1,0 +1,24 @@
+.cubeButton{
+    transform-style: preserve-3d;
+    transform-origin:top;
+    transition: all .3s ease-out;
+}
+
+.cubeButton:hover{
+    transform: translatez(-1.5rem) rotatex(90deg);
+}
+    
+.cubeButton div{
+    color:var(--primary-dark);
+    font-size : 3rem;
+    line-height:2.5rem;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+.cubeButton .cubeButton--bottom{
+    color:var(--neutral);
+    transform-origin:top;
+    transform:rotatex(-90deg);
+}

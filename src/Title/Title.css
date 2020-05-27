@@ -9,15 +9,15 @@
 
 .title h1{
     font-family: var(--FONT_TITLE);
-    color:var(--yellow);
+    color:var(--secondary);
     font-size: 3em;
     margin-bottom: 0;
-    text-shadow: 0 5px #200225;
+    text-shadow: 0 5px var(--primary-dark);
 }
 
 .title p{
-    background-color: #200225;
-    color:var(--yellow);
+    background-color: var(--primary-dark);
+    color:var(--secondary);
     font-size: 1.5em;
     margin-top: -.75rem;
     padding:.5rem 1.5rem;
@@ -28,7 +28,7 @@
     height:150px;
     object-fit: cover;
     border-radius: 50%;
-    border:solid 10px #3e0159;
+    border:solid 10px var(--primary-dark);
     display: block;
     margin:auto;
     margin-bottom:1.5em;
