@@ -37,7 +37,7 @@ const PROFIL_CONTENT = {
    id : 'siteWeb',
    button_title : 'Sites Web',
    title : 'Mes sites Internets',
-   children : <WebsiteLink />,
+   children : <WebsiteLink link='http://quizanime.gaelsurleweb.ca.s3-website.us-east-2.amazonaws.com' text='Quiz animé'/>,
  }
 
 /**

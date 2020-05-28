@@ -2,10 +2,10 @@ import React from 'react'
 
 import './Website_Link.css'
 
-function WebsiteLink(){
+function WebsiteLink(prop){
     return(
         <div className='webSiteLink'>
-            <a href="https://drive.google.com/file/d/1XqeJMxKN3F1nqIqHSftZL_Ps0uJyRoEk/view?usp=sharing">Quizz Animé</a>
+            <a href={prop.link}>{prop.text}</a>
         </div>
     )
 }
