@@ -6,6 +6,7 @@
 
 .cubeButton:hover{
     transform: translatez(-1.5rem) rotatex(90deg);
+    cursor: pointer;
 }
     
 .cubeButton div{
@@ -19,6 +20,7 @@
 
 .cubeButton .cubeButton--bottom{
     color:var(--neutral);
+    text-decoration: underline;
     transform-origin:top;
     transform:rotatex(-90deg);
 }

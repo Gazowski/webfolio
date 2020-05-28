@@ -1,16 +1,23 @@
 import React from 'react'
-import Grid from '@material-ui/core/Grid';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import './Cube_Button.css'
 
 function CubeButton(data){
     return(
-        <Grid
-            item 
-            className='cubeButton'>
-            <div className='cubeButton--front'>{data.text}</div>
-            <div className='cubeButton--bottom'>{data.text}</div>
-        </Grid>
+        <div className='cubeButton'>
+            <div className='cubeButton--front'>{data.button_title}</div>
+            <div className='cubeButton--bottom'>
+                <Link                       
+                    to={data.id}
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}>
+                    {data.button_title}
+                </Link>
+            </div>
+        </div>
     )
 }
 

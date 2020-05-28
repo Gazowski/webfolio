@@ -1,11 +1,11 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
 import Title from './Title/Title'
 import Tile from './Tile/Tile'
 import ProfilContent from './Profil_Content/Profil_Content'
 import WebsiteLink from './Website_Link/Website_Link'
 import CubeButton from './Cube_Button/Cube_Button'
 import BlockContent from './Block_Content/Block_Content'
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import './App.css';
 
@@ -19,14 +19,11 @@ const TITLE = {
 /**
  * PROFIL
  */
-const PROFIL_SETTING = {
-  elevation : 2,
-  margin : 2,
-  padding : 2,
-}
 
 const PROFIL_CONTENT = {
   class : 'tile profil',
+  id : 'profil',
+  button_title : 'Profil',
   title : 'Artisan du Web',
   text : 'blablasbalsavals',
 }
@@ -35,14 +32,10 @@ const PROFIL_CONTENT = {
  * MY SITES
  */
 
- const MY_SITES_SETTING = {
-  elevation : 2,
-  margin : 2,
-  padding : 2,
- }
-
  const MY_SITES_CONTENT = {
    class : 'tile my_sites',
+   id : 'siteWeb',
+   button_title : 'Sites Web',
    title : 'Mes sites Internets',
    children : <WebsiteLink />,
  }
@@ -51,14 +44,10 @@ const PROFIL_CONTENT = {
  * MY WORKS
  */
 
- const MY_WORKS_SETTING = {
-  elevation : 2,
-  margin : 2,
-  padding : 2,
- }
-
  const MY_WORKS_CONTENT = {
    class : 'tile my_works',
+   id : 'illustrations',
+   button_title : 'Illustrations',
    title : 'Mes Illustrations',
    children : 'blablablablabla',
  }
@@ -67,33 +56,23 @@ function App() {
   return (
     <div>
       <Title {...TITLE}/>
-      <Grid
-        container
-        direction="column"
-        justify="flex-start"
-        alignItems='center'
-        spacing={10}
-        xs={12}>
+      <div className='main-wrapper'>
+        <nav className='menu-wrapper'>
+          <CubeButton {...PROFIL_CONTENT} />
+          <CubeButton {...MY_SITES_CONTENT} />
+          <CubeButton {...MY_WORKS_CONTENT} />
+        </nav>
+        <div className='mainContent'>
+          <BlockContent {...PROFIL_CONTENT} />
+          <BlockContent {...MY_SITES_CONTENT} />
+          <BlockContent {...MY_WORKS_CONTENT} />
 
-        <Grid
-          container
-          item
-          direction="column"
-          justify="flex-start"
-          alignItems='center'
-          spacing={0}
-          xs={12}>
-          <CubeButton text='Profil' />
-          <CubeButton text='Site Web' />
-          <CubeButton text='Illustrations' />
-        </Grid>
-
-        <BlockContent {...PROFIL_CONTENT} />
+        </div>
 
         {/* <Tile {...PROFIL_SETTING} {...PROFIL_CONTENT} />
         <Tile {...MY_SITES_SETTING} {...MY_SITES_CONTENT} />
         <Tile {...MY_WORKS_SETTING} {...MY_WORKS_CONTENT} /> */}
-      </Grid>
+      </div>
     </div>
   );
 }

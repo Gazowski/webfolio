@@ -1,5 +1,6 @@
 .blockContent{
     background-color: var(--primary-dark);
+    box-sizing: border-box;
     color:var(--secondary-ligth);
     margin-top: 3em;
     padding:1em;
