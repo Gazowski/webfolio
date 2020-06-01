@@ -3,26 +3,104 @@
 /**
 * color : https://coolors.co/ac5faa-cfc165-fbbf2d-a206b8-b71955
 */
+
+@font-face{
+    font-family:'moon_get' ;
+    src:url(./font/moon_get-Heavy.otf);
+}
+
 :root{
-    --FONT_TITLE : 'Rubik', sans-serif;
+    --FONT_TITLE : 'moon_get', sans-serif;
     --FONT_TEXT :'Dosis', sans-serif;
+    --FONT_BUTTON : 'moon_get', sans-serif;
     
-    --primary-dark: #3e0159;
-    --secondary-ligth : #fff062;
-    --secondary: #fff062;
+    --primary-dark: black;
+    --secondary-ligth : white;
+    --secondary: white;
     --neutral: #b71955;
     --color4: hsla(356%, 62%, 73%, 1);
     --color5: hsla(251%, 72%, 35%, 1);
 
-    --IMAGE: url('./img/lighted-up-alleyway-blurred.jpg');
+    --IMAGE: url('./img/grayscale-photo-of-tree-on-a-snow-covered-field-3593865.jpg');
+    /* --IMAGE_PROFIL */
+}
+
+*{
+    box-sizing: border-box;
 }
 
 body{
     font-family: var(--FONT_TEXT);
     height: 100vh;
-    background-color: var(--secondary-ligth);
+    background-color: black;
+}
+
+.header_wrapper{
+    height: 100%;
+}
+
+.menu-wrapper{
+    background-color: var(--secondary);
+    color: var(--primary);
+    height: 100%;
+}
+
+/* LAYOUT */
+.main_wrapper{
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'mainContent'
+        'footer';
+}
+.header-wrapper{
+    display : grid;
+    grid-area: header;
+    grid-template-areas: 
+        'title'
+        'menu';
+    height: 100vh;
+}
+
+.title{
+    grid-area: title;
+    align-self: center;
+}
+
+.menu-wrapper{
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.mainContent{
+    display:grid;
+    grid-area: mainContent;
+    grid-template-areas: 
+        'profil'
+        'siteWeb'
+        'content';
 
 }
+
+.blockContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.profil{
+    grid-area : profil;
+}
+
+.siteWeb{
+    grid-area : siteWeb;
+}
+
+
 
 
 

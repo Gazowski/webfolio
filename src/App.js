@@ -13,7 +13,8 @@ import './App.css';
  * TITRE
  */
 const TITLE = {
-  title : 'Gaël_C',
+  title : 'GAëLC.',
+  subtitle: 'Développeur WEB'
 }
 
 /**
@@ -57,25 +58,25 @@ const PROFIL_CONTENT = {
 
 function App() {
   return (
-    <div>
-      <Title {...TITLE}/>
-      <div className='main-wrapper'>
+    <div className='main-wrapper'>
+      <div className='header-wrapper'>
+        <Title {...TITLE}/>
         <nav className='menu-wrapper'>
           <CubeButton {...PROFIL_CONTENT} />
           <CubeButton {...MY_SITES_CONTENT} />
           <CubeButton {...MY_WORKS_CONTENT} />
         </nav>
-        <div className='mainContent'>
-          <BlockContent {...PROFIL_CONTENT} />
-          <BlockContent {...MY_SITES_CONTENT} />
-          <BlockContent {...MY_WORKS_CONTENT} />
-
-        </div>
-
-        {/* <Tile {...PROFIL_SETTING} {...PROFIL_CONTENT} />
-        <Tile {...MY_SITES_SETTING} {...MY_SITES_CONTENT} />
-        <Tile {...MY_WORKS_SETTING} {...MY_WORKS_CONTENT} /> */}
       </div>
+      <div className='mainContent'>
+        <BlockContent {...PROFIL_CONTENT} />
+        <BlockContent {...MY_SITES_CONTENT} />
+        <BlockContent {...MY_WORKS_CONTENT} />
+
+      </div>
+
+      {/* <Tile {...PROFIL_SETTING} {...PROFIL_CONTENT} />
+      <Tile {...MY_SITES_SETTING} {...MY_SITES_CONTENT} />
+      <Tile {...MY_WORKS_SETTING} {...MY_WORKS_CONTENT} /> */}
     </div>
   );
 }

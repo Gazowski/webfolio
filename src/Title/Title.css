@@ -1,9 +1,5 @@
 .title {
-    background: linear-gradient(0deg, rgba(58,3,66,.95) 25%, rgba(162,6,184,0) 90%),var(--IMAGE);
-    background-size:contain;
-    background-attachment:fixed;
-    height: 75vh;
-    width: 100vw;
+    padding: 0 2rem;
 }
 
 
@@ -15,12 +11,16 @@
     text-shadow: 0 5px var(--primary-dark);
 }
 
+.title h1 span{
+    font-variant: small-caps;
+}
+
 .title p{
-    background-color: var(--primary-dark);
     color:var(--secondary);
-    font-size: 1.5em;
-    margin-top: -.75rem;
-    padding:.5rem 1.5rem;
+    font-family: var(--FONT_TITLE);
+    font-size: 1em;
+    margin-top: .5rem;
+    margin-left: .25rem;
 }
 
 .image img{
