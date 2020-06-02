@@ -41,6 +41,7 @@ const PROFIL_CONTENT = {
    children : [
     <WebsiteLink link='http://quizanime.gaelsurleweb.ca.s3-website.us-east-2.amazonaws.com' text='Quiz animé'/>,
     <WebsiteLink link='http://animation.gaelsurleweb.ca.s3-website.us-east-2.amazonaws.com' text='Animation'/>,
+    <WebsiteLink link='http://le21.gaelsurleweb.ca.s3-website.us-east-2.amazonaws.com' text='Le 21'/>,
   ],
  }
 
