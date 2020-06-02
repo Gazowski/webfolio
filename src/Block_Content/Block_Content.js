@@ -6,7 +6,7 @@ function BlockContent(data){
     return(
         <div  id={data.id} className={`blockContent ${data.id}`}>
             <h2>{data.title}</h2>
-            <div>{data.text}</div>
+            <div className='content'>{data.text}</div>
             <div>{data.children}</div>
         </div>
     )

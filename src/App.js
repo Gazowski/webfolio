@@ -5,7 +5,10 @@ import ProfilContent from './Profil_Content/Profil_Content'
 import WebsiteLink from './Website_Link/Website_Link'
 import CubeButton from './Cube_Button/Cube_Button'
 import BlockContent from './Block_Content/Block_Content'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll"
+import competences_frontend from './img/competence-frontend.svg' 
+import competences_backend from './img/competence-backend.svg'
+import competences_tools from './img/competence-tools.svg'
 
 import './App.css';
 
@@ -26,7 +29,18 @@ const PROFIL_CONTENT = {
   id : 'profil',
   button_title : 'Profil',
   title : 'Artisan du Web',
-  text : 'blablasbalsavals',
+  text : [<img
+    src={competences_frontend}
+    alt='mes compétences frontend'
+    />,
+    <img
+    src={competences_backend}
+    alt='mes compétences frontend'
+    />,
+    <img
+    src={competences_tools}
+    alt='mes compétences frontend'
+    />],
 }
 
 /**
