@@ -10,6 +10,7 @@
 .blockContent h2{
     font-family: var(--FONT_TITLE);
     text-transform: uppercase;
+    margin-top: 4rem;
 }
 
 .profil{

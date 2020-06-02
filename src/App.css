@@ -9,6 +9,8 @@
 @font-face{
     font-family:'moon_get' ;
     src:url(./font/moon_get-Heavy.otf);
+    font-family:'archivoBlack';
+    src:url(./font/ArchivoBlack-Regular.ttf);
 }
 
 :root{
@@ -89,7 +91,7 @@ body{
 .blockContent{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     padding: 0 2rem;
 }
 
