@@ -9,9 +9,12 @@
 @font-face{
     font-family:'moon_get' ;
     src:url(./font/moon_get-Heavy.otf);
+}
+@font-face{
     font-family:'archivoBlack';
     src:url(./font/ArchivoBlack-Regular.ttf);
 }
+
 
 :root{
     --FONT_TITLE : 'moon_get', sans-serif;
