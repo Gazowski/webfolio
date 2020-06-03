@@ -25,7 +25,7 @@ const PROFIL_CONTENT = {
   class : 'tile profil',
   id : 'profil',
   button_title : 'Profil',
-  title : 'Artisan du Web',
+  title : 'Mon Profil',
   // text : ,
 }
 
@@ -36,8 +36,8 @@ const PROFIL_CONTENT = {
  const MY_SITES_CONTENT = {
    class : 'tile my_sites',
    id : 'siteWeb',
-   button_title : 'Sites Web',
-   title : 'Mes sites Internets',
+   button_title : 'Projets',
+   title : 'Mes Projets',
    children : [
     <WebsiteLink link='http://quizanime.gaelsurleweb.ca.s3-website.us-east-2.amazonaws.com' text='Quiz animé'/>,
     <WebsiteLink link='http://animation.gaelsurleweb.ca.s3-website.us-east-2.amazonaws.com' text='Animation'/>,
