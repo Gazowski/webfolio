@@ -1,0 +1,35 @@
+.projetIframe--none{
+    display:none;
+}
+
+.projetIframe--display{
+    position: fixed;
+    top: 1rem;
+    left:1rem;
+    height: calc(100% - 2rem);
+    width: calc(100% - 2rem);
+}
+
+.projetIframe--display iframe{
+    border:none;
+    /* box-shadow: 0 0 20px 10px #333; */
+    height: 75%; width: 100%;
+}
+
+.projetIframe-description{
+    background-color: var(--primary-dark);
+    /* box-shadow: 0 0 20px 10px #000; */
+    color:var(--secondary);
+    padding: 1rem;
+    height: 25%;
+}
+
+.projetIframe-closeButton{
+    border: none;
+    background-color: var(--primary-dark);
+    color:var(--secondary);
+    font-size: 1.5rem;
+    position: absolute;
+    bottom:5px;
+    right: 5px;
+}

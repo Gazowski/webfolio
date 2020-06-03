@@ -40,6 +40,15 @@ body{
     height: calc(var(--vh, 1vh) * 100);
 }
 
+h1,h2,h3{
+    font-family:var(--FONT_TITLE);
+    font-weight: 400;
+}
+
+h2,h3{
+    letter-spacing: .1rem;
+}
+
 .header_wrapper{
     height: 100%;
 }
@@ -49,6 +58,7 @@ body{
     color: var(--primary);
     height: 100%;
 }
+
 
 /* LAYOUT */
 .main_wrapper{

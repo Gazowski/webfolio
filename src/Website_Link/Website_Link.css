@@ -1,8 +1,14 @@
 .webSiteLink{
-    background: var(--primary-dark);
-    padding:1rem;
     margin-bottom:.5rem;
 }
-.webSiteLink a{
+.webSiteLink button{
+    background-color: var(--primary-dark);
+    border :none;
     color:var(--secondary);
+    font-family: var(--FONT_TEXT);
+    font-size: 1.5rem;
+    text-align: left;
+    padding:1rem;
+    width: 100%;
 }
+

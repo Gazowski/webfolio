@@ -2,12 +2,16 @@ import React from 'react'
 
 import './Website_Link.css'
 
-function WebsiteLink(prop){
-    return(
-        <div className='webSiteLink'>
-            <a href={prop.link} target='_blank' rel="noopener">{prop.text}</a>
-        </div>
-    )
+class WebsiteLink extends React.Component{
+
+    render(){
+            return(
+            <div className='webSiteLink'>
+                <button 
+                    onClick={(e) => {this.props.action(e,this.props)}}>{this.props.title}</button>
+            </div>
+        )
+    }
 }
 
 export default WebsiteLink
