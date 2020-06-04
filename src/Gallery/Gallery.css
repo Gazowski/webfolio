@@ -1,0 +1,17 @@
+
+
+.carousel .slide img{
+    width:50%;
+}
+
+.slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

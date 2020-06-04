@@ -56,6 +56,7 @@ class App extends React.Component {
     }
   
   render(){
+
     /**
      * TITRE
      */
@@ -120,8 +121,31 @@ class App extends React.Component {
       id : 'illustrations',
       button_title : 'Illustrations',
       title : 'Mes Illustrations',
-      children : <Gallery />,
+      children : <Gallery images={[
+        { 
+          id: 1, 
+          link: './img/carousel/snl/camion_cote1.png',
+          alt: 'illustration camion coté droit',
+         },
+        { 
+          id: 2, 
+          link: './img/carousel/snl/affiche_jeux.jpg',
+          alt: 'Affiche pour les Matchs de la Nautique',
+        },
+        {
+          id:3,
+          link: './img/carousel/snl/combine-1.jpg',
+          alt: 'affiche pour l\'épreuve du combiné',
+        },
+        {
+          id:4,
+          link: './img/carousel/snl/affiche_finale.jpg',
+          alt: 'affiche pour la finale de joute',
+        }
+      ] }/>,
     }
+
+
     return (
       <div className='main-wrapper'>
         <div className='header-wrapper'>
