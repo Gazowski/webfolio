@@ -8,18 +8,27 @@ class Gallery extends React.Component{
     render(){
         console.log(this.props)
         return(
-            <Carousel 
-                autoPlay
-                infiniteLoop
-                stopOnHover
-                interval='4000'>
-                {this.props.images.map((image) => (
-                    <img src={image.link} 
-                        key={image.id} 
-                        alt={image.alt}/>
+            <div>
+                {this.props.galleries.map((gallery) => (
+                    <div key={gallery.title}>
+                        <h3 className='gallery-title'>{gallery.title}</h3>
+                        <Carousel 
+                            autoPlay
+                            infiniteLoop
+                            stopOnHover
+                            showStatus={false}
+                            showThumbs={false}
+                            interval='4000'
+                            transitionTime='1000'>
+                            {gallery.images.map((image) => (
+                                <img src={image.link} 
+                                    key={image.id} 
+                                    alt={image.alt}/>
+                            ))}
+                        </Carousel>
+                    </div> 
                 ))}
-
-            </Carousel>
+            </div>
         )
     }
 }

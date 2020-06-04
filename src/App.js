@@ -121,27 +121,67 @@ class App extends React.Component {
       id : 'illustrations',
       button_title : 'Illustrations',
       title : 'Mes Illustrations',
-      children : <Gallery images={[
-        { 
-          id: 1, 
-          link: './img/carousel/snl/camion_cote1.png',
-          alt: 'illustration camion coté droit',
-         },
-        { 
-          id: 2, 
-          link: './img/carousel/snl/affiche_jeux.jpg',
-          alt: 'Affiche pour les Matchs de la Nautique',
+      children : <Gallery galleries={[
+        {
+          title : 'Pour une application',
+          images : [
+            {
+              id: 1,
+              link: './img/carousel/pesage/page_pesage.png',
+              alt: 'page de travail de l\'appli',
+            },
+            {
+              id: 2,
+              link: './img/carousel/pesage/page_menu.png',
+              alt: 'page menu de l\'appli',
+            }
+          ]
         },
         {
-          id:3,
-          link: './img/carousel/snl/combine-1.jpg',
-          alt: 'affiche pour l\'épreuve du combiné',
+          title : 'Pour compagnie',
+          images : [
+            {
+              id: 1,
+              link: './img/carousel/manuquip/manuquip_service_rouge.jpg',
+              alt : 'pub manuquip service',
+            },
+            {
+              id: 2,
+              link: './img/carousel/manuquip/manuquip_service_bleu.jpg',
+              alt : 'pub manuquip service',
+            },
+            {
+              id: 3,
+              link: './img/carousel/manuquip/manuquip_cle_main.jpg',
+              alt : 'pub manuquip',
+            },
+          ]
         },
         {
-          id:4,
-          link: './img/carousel/snl/affiche_finale.jpg',
-          alt: 'affiche pour la finale de joute',
-        }
+          title : 'Pour club sportif', 
+          images :[
+          { 
+            id: 1, 
+            link: './img/carousel/snl/camion_cote1.png',
+            alt: 'illustration camion coté droit',
+          },
+          { 
+            id: 2, 
+            link: './img/carousel/snl/affiche_jeux.jpg',
+            alt: 'Affiche pour les Matchs de la Nautique',
+          },
+          {
+            id:3,
+            link: './img/carousel/snl/combine-1.jpg',
+            alt: 'affiche pour l\'épreuve du combiné',
+          },
+          {
+            id:4,
+            link: './img/carousel/snl/affiche_finale.jpg',
+            alt: 'affiche pour la finale de joute',
+          }]
+        },
+
       ] }/>,
     }
 
