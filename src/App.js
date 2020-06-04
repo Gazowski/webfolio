@@ -11,6 +11,13 @@ import Gallery from './Gallery/Gallery'
 
 import './App.css';
 
+/**
+ * A FAIRE : 
+ *    - mettre tous les sites statiques en HTTPS !
+ *    - rotation menu auto sur mobile
+ *    - ajouter flèche de navigation
+ */
+
 class App extends React.Component {
   constructor(props){
     super(props)
@@ -80,7 +87,7 @@ class App extends React.Component {
       title : 'Mes Projets',
       children : [
         <WebsiteLink key="01" 
-          link='http://quizanime.gaelsurleweb.ca.s3-website.us-east-2.amazonaws.com'
+          link='https://quizanime.gaelsurleweb.ca'
           action={this.handleClick} 
           title='Quiz animé'
           description='technologies utilisées : JS (Vanilla) , POO , module mjs , SASS'/>,
