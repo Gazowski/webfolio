@@ -16,6 +16,7 @@ import './App.css';
  *    - mettre tous les sites statiques en HTTPS !
  *    - rotation menu auto sur mobile
  *    - ajouter flèche de navigation
+ *    - ajouter bouton pour les illustrations (comme projet)
  */
 
 class App extends React.Component {
@@ -91,11 +92,11 @@ class App extends React.Component {
           link='https://quizanime.gaelsurleweb.ca'
           action={this.handleClick} 
           title='Quiz animé'
-          description='technologies utilisées : JS (Vanilla) , POO , module mjs , SASS'/>,
+          description='JS (Vanilla) , POO , module mjs , SASS'/>,
         <WebsiteLink key="02" 
-          link='http://animation.gaelsurleweb.ca.s3-website.us-east-2.amazonaws.com'
+          link='http://siteec2.gaelsurleweb.ca/boutique-vaisselle'
           action={this.handleClick} 
-          title='Animation'
+          title='Boutique en ligne'
           description=''/>,
         <WebsiteLink key="03" 
           link='http://le21.gaelsurleweb.ca.s3-website.us-east-2.amazonaws.com'
@@ -138,7 +139,7 @@ class App extends React.Component {
           ]
         },
         {
-          title : 'Pour compagnie',
+          title : 'Pour une compagnie',
           images : [
             {
               id: 1,
@@ -158,7 +159,7 @@ class App extends React.Component {
           ]
         },
         {
-          title : 'Pour club sportif', 
+          title : 'Pour un club sportif', 
           images :[
           { 
             id: 1, 
