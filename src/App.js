@@ -94,7 +94,7 @@ class App extends React.Component {
           title='Quiz animé'
           description='JS (Vanilla) , POO , module mjs , SASS'/>,
         <WebsiteLink key="02" 
-          link='http://siteec2.gaelsurleweb.ca/boutique-vaisselle'
+          link='https://siteec2.gaelsurleweb.ca/boutique-vaisselle'
           action={this.handleClick} 
           title='Boutique en ligne'
           description=''/>,
