@@ -83,7 +83,7 @@ button.btn--dark:hover, a.btn--dark:hover{
     transition: all .4s ease-in-out;
 }
 
-button.btn-light, a.btn-light{
+button.btn--light, a.btn--light{
     border:solid 2px var(--primary-dark);
     color: var(--primary-dark);
 }
