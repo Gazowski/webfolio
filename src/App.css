@@ -59,6 +59,31 @@ h2,h3{
     height: 100%;
 }
 
+button.btn-dark, a.btn-dark{
+    background-color: transparent;
+    border:solid 2px var(--secondary); 
+    color: var(--secondary);
+    font-family: var(--FONT_TEXT);
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    margin:.25rem;
+    min-width: 7.5rem;
+    padding:1rem;
+    text-decoration: none;
+    text-transform: uppercase;    
+}
+
+button.btn-dark:hover, a.btn-dark:hover{
+    background-color: var(--secondary);
+    color:var(--primary-dark);
+    transition: all .4s ease-in-out;
+}
+
+button.btn-light, a.btn-light{
+    background-color: var(--secondary);
+}
+
 
 /* LAYOUT */
 .main_wrapper{

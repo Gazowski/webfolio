@@ -1,7 +1,5 @@
 import React from 'react';
 import Title from './Title/Title'
-import Tile from './Tile/Tile'
-import ProfilContent from './Profil_Content/Profil_Content'
 import WebsiteLink from './Website_Link/Website_Link'
 import CubeButton from './Cube_Button/Cube_Button'
 import BlockContent from './Block_Content/Block_Content'
@@ -27,7 +25,8 @@ class App extends React.Component {
       iframeClass : 'projetIframe--none',
       linkToDisplay : '',
       projectTitle : '',
-      projectDescription : '',
+      projectDescriptions : [],
+      projectTags : [],
     }
   }
 
@@ -47,7 +46,8 @@ class App extends React.Component {
       iframeClass : 'projetIframe--display', 
       linkToDisplay : props.link,
       projectTitle : props.title,
-      projectDescription : props.description,
+      projectDescriptions : props.descriptions,
+      projectTags : props.tags,
      })
   }
     
@@ -92,23 +92,27 @@ class App extends React.Component {
           link='https://siteec2.gaelsurleweb.ca/ajdm'
           action={this.handleClick} 
           title='Gestion de stage'
-          description="Premier projet étudiant individuel. Première expérience avec PHP couplé avec Javascript. Gestion de base données MYSQL en MVC "/>,
+          descriptions={["Premier projet étudiant individuel."," Première expérience avec PHP couplé avec Javascript.","Gestion de base données MYSQL en MVC."]}
+          tags={['PHP','MySQL','Javascript','SASS','MVC']}/>,
         <WebsiteLink key="01" 
           link='https://quizanime.gaelsurleweb.ca'
           action={this.handleClick} 
           title='Quiz animé'
-          description='Travail étudiant. Programmation Javascript orienté objet avec animation CSS.'/>,
+          descriptions={['Travail étudiant.','Programmation Javascript orienté objet avec animation CSS.']}
+          tags={['Javascript','Animation CSS','SASS','POO']}/>,
         <WebsiteLink key="02" 
           link='https://siteec2.gaelsurleweb.ca/boutique-vaisselle'
           action={this.handleClick} 
           title='Boutique en ligne'
-          description="Travail étudiant. Programmation Javascript avec appel Ajax. Gesion d'une base de données avec PHP / MYSQL Utilisation de GRID et SASS pour le style."/>,
+          descriptions={["Travail étudiant.","Programmation Javascript avec appel Ajax.","Gestion d'une base de données avec PHP / MYSQL.","Utilisation de GRID et SASS pour le style."]}
+          tags={['POO','Javascript','AJAX','SASS']}/>,
         <ProjetFrame 
           key="iframe" 
           iframeClass={`projetIframe ${this.state.iframeClass}`}
           link={this.state.linkToDisplay}
           title={this.state.projectTitle}
-          description={this.state.projectDescription}
+          descriptions={this.state.projectDescriptions}
+          tags={this.state.projectTags}
           closeBtnAction={this.handleCloseBtn}/>
       ],
     }
