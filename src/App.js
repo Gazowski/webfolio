@@ -88,21 +88,21 @@ class App extends React.Component {
       button_title : 'Projets',
       title : 'Mes Projets',
       children : [
+        <WebsiteLink key="03" 
+          link='https://siteec2.gaelsurleweb.ca/ajdm'
+          action={this.handleClick} 
+          title='Gestion de stage'
+          description="Premier projet étudiant individuel. Première expérience avec PHP couplé avec Javascript."/>,
         <WebsiteLink key="01" 
           link='https://quizanime.gaelsurleweb.ca'
           action={this.handleClick} 
           title='Quiz animé'
-          description='JS (Vanilla) , POO , module mjs , SASS'/>,
+          description='Travail étudiant. Programmation Javascript orienté objet avec animation CSS.'/>,
         <WebsiteLink key="02" 
           link='https://siteec2.gaelsurleweb.ca/boutique-vaisselle'
           action={this.handleClick} 
           title='Boutique en ligne'
-          description=''/>,
-        <WebsiteLink key="03" 
-          link='http://le21.gaelsurleweb.ca.s3-website.us-east-2.amazonaws.com'
-          action={this.handleClick} 
-          title='Le 21'
-          description=''/>,
+          description='Travail étudiant. Programmation Javascript avec appel Ajax. Utilisation de GRID et SASS pour le style.'/>,
         <ProjetFrame 
           key="iframe" 
           iframeClass={`projetIframe ${this.state.iframeClass}`}
