@@ -1,12 +1,13 @@
 .cubeButton{
     transform-style: preserve-3d;
     transform-origin:top;
-    transition: all .3s ease-out;
+    /* transition: all .3s ease-out; */
+    animation : 1s ease-out .3s both rotateCube;
 }
 
 .cubeButton:hover{
-    transform: translatez(-1.5rem) rotatex(90deg);
-    cursor: pointer;
+    /* transform: translatez(-1.5rem) rotatex(90deg);*/
+    cursor: pointer; 
 }
     
 .cubeButton div{
@@ -25,4 +26,21 @@
     /* text-decoration: underline; */
     transform-origin:top;
     transform:rotatex(-90deg) translateY(.25rem);
+}
+
+@media screen and (min-width:1024px){
+    .cubeButton{
+
+        transition: all .3s ease-out;
+        animation : none;
+    }
+    
+    .cubeButton:hover{
+        transform: translatez(-1.5rem) rotatex(90deg);
+    }
+}
+
+@keyframes rotateCube{
+    from {transform:translatez(0) rotateX(0)}
+    to {transform:translatez(-1.5em) rotateX(90deg)}
 }

@@ -92,7 +92,7 @@ class App extends React.Component {
           link='https://siteec2.gaelsurleweb.ca/ajdm'
           action={this.handleClick} 
           title='Gestion de stage'
-          description="Premier projet étudiant individuel. Première expérience avec PHP couplé avec Javascript."/>,
+          description="Premier projet étudiant individuel. Première expérience avec PHP couplé avec Javascript. Gestion de base données MYSQL en MVC "/>,
         <WebsiteLink key="01" 
           link='https://quizanime.gaelsurleweb.ca'
           action={this.handleClick} 
@@ -102,7 +102,7 @@ class App extends React.Component {
           link='https://siteec2.gaelsurleweb.ca/boutique-vaisselle'
           action={this.handleClick} 
           title='Boutique en ligne'
-          description='Travail étudiant. Programmation Javascript avec appel Ajax. Utilisation de GRID et SASS pour le style.'/>,
+          description="Travail étudiant. Programmation Javascript avec appel Ajax. Gesion d'une base de données avec PHP / MYSQL Utilisation de GRID et SASS pour le style."/>,
         <ProjetFrame 
           key="iframe" 
           iframeClass={`projetIframe ${this.state.iframeClass}`}
