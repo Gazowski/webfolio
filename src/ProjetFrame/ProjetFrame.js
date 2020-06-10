@@ -16,10 +16,10 @@ class ProjetFrame extends React.Component{
             <Iframe className="iframe" src={this.props.link}/>
             <div className="projetIframe-cmd">
                 <button
-                    className='btn-dark'
+                    className='btn btn--dark'
                     onClick={() => {this.toggleInfo()}}>Info</button>
                 <a 
-                    className='btn-dark'
+                    className='btn btn--dark'
                     href={this.props.link} 
                     target='_blank' 
                     rel="noopener noreferrer">voir le site</a>
