@@ -12,7 +12,6 @@ import './App.css';
 /**
  * A FAIRE : 
  *    - mettre tous les sites statiques en HTTPS !
- *    - rotation menu auto sur mobile
  *    - ajouter flèche de navigation
  *    - ajouter bouton pour les illustrations (comme projet)
  */
@@ -207,10 +206,6 @@ class App extends React.Component {
           <BlockContent {...MY_WORKS_CONTENT} />
 
         </div>
-
-        {/* <Tile {...PROFIL_SETTING} {...PROFIL_CONTENT} />
-        <Tile {...MY_SITES_SETTING} {...MY_SITES_CONTENT} />
-        <Tile {...MY_WORKS_SETTING} {...MY_WORKS_CONTENT} /> */}
       </div>
     );
   }
