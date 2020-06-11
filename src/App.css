@@ -67,6 +67,7 @@ button.btn, a.btn{
     height: 3.5rem;
     letter-spacing: 3px;
     margin-right:.5rem;
+    margin-bottom: .5rem;
     min-width: 7.5rem;
     padding:1rem;
     text-decoration: none;
@@ -92,6 +93,15 @@ button.btn--light:hover, a.btn--light:hover{
     background-color: var(--primary-dark);
     color:var(--secondary);
     transition: all .4s ease-in-out;
+}
+
+.btn--fullWidth{
+    text-align:left;
+    width:100%;
+}
+
+.displayNone{
+    display: none;
 }
 
 

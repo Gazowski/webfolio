@@ -14,6 +14,7 @@ import './App.css';
  *    - mettre tous les sites statiques en HTTPS !
  *    - ajouter flèche de navigation
  *    - ajouter bouton pour les illustrations (comme projet)
+ *    - remplacer les btn close
  */
 
 class App extends React.Component {
@@ -143,6 +144,8 @@ class App extends React.Component {
         },
         {
           title : 'Pour une compagnie',
+          cieName : 'Manuquip inc.',
+          link:'https://manuquipinc.com/fr/',
           images : [
             {
               id: 1,

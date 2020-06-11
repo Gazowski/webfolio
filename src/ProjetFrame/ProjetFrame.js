@@ -4,7 +4,7 @@ import React from 'react'
 import './ProjetFrame.css'
 
 class ProjetFrame extends React.Component{
-    toggleInfo = () =>{
+    toggleInfo(){
         let info = document.querySelector('.projetIframe-info')
         info.classList.toggle('projetIframe-info--displayNone')
     }
@@ -17,9 +17,8 @@ class ProjetFrame extends React.Component{
             <div className="projetIframe-cmd">
                 <button
                     className='btn btn--dark'
-                    onClick={() => {this.toggleInfo()}}>Info</button>
-                <a 
-                    className='btn btn--dark'
+                    onClick={this.toggleInfo}>Info</button>
+                <a className='btn btn--dark'
                     href={this.props.link} 
                     target='_blank' 
                     rel="noopener noreferrer">voir le site</a>

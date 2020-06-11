@@ -4,8 +4,45 @@
     text-align: right;
 }
 
+.carouselWrapper{
+    background-color: rgba(0,0,0,.75);
+    padding:1rem;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom:0;
+    z-index: 5;
+}
+
+.carouselWrapper a{
+    color:var(--secondary);
+    font-family: var(--FONT_TEXT);
+
+    position: absolute;
+    bottom:3rem;
+    left: 3rem;
+}
+
+.carouselWrapper a:hover{
+    color:var(--neutral);
+}
+
+.carousel-root{
+    display:flex;
+    height: 100%;
+}
+
+.carousel{
+    display: flex;
+}
+.carousel .slide{
+    background-color: transparent;
+}
 .carousel .slide img{
-    width:50%;
+    max-width: 85%;
 }
 
 .slide{
@@ -18,4 +55,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.carousel-btnClose{
+    border: none;
+    background-color: transparent;
+    color:var(--secondary);
+    font-size: 1.5rem;
+    position: absolute;
+    bottom:3rem;
+    right: 3rem;
 }
