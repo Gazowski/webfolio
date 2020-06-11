@@ -6,6 +6,7 @@ import BlockContent from './Block_Content/Block_Content'
 import { Link, animateScroll as scroll } from "react-scroll"
 import ProjetFrame from './ProjetFrame/ProjetFrame'
 import Gallery from './Gallery/Gallery'
+import CV from './img/CV.svg'
 
 import './App.css';
 
@@ -13,8 +14,10 @@ import './App.css';
  * A FAIRE : 
  *    - mettre tous les sites statiques en HTTPS !
  *    - ajouter flèche de navigation
- *    - ajouter bouton pour les illustrations (comme projet)
  *    - remplacer les btn close
+ *    - mettre lien courriel et linkedin sous le titre
+ *    - faire l'icon onglet
+ *    - mettre le lien vers le cv
  */
 
 class App extends React.Component {
@@ -87,7 +90,7 @@ class App extends React.Component {
       id:'parcours',
       button_title:'Parcours',
       title:'Mon Parcours',
-      children:'détails de mes parcours',
+      children:<img src={CV}/>,
     }
 
     /**

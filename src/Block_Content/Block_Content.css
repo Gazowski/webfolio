@@ -83,6 +83,17 @@ button.btn, a.btn{
     padding-left: 25vw;
 }
 
+.parcours{
+    height: auto;
+}
+
+.parcours img{
+    max-width: 100%;
+    padding-bottom: 3rem;
+}
+
+
+
 @media screen and (min-width:1024px){
     .blockContent{
         /* j'ai du le répéter dans le media query de app.css !!!!! */
