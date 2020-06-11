@@ -24,7 +24,7 @@ class Gallery extends React.Component{
             <div>
                 {this.props.galleries.map((gallery) => (
                     <button key={gallery.title}
-                        className="btn btn--dark btn--fullWidth"
+                        className="btn btn--fullWidth"
                         onClick={() => {this.displayGallery(gallery)}}>{gallery.title}</button>
                 ))}
                 {this.state.gallery 

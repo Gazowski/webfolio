@@ -8,7 +8,7 @@ class WebsiteLink extends React.Component{
             return(
             <div className='webSiteLink'>
                 <button 
-                    className='btn btn--light btn--fullWidth'
+                    className='btn btn--fullWidth'
                     onClick={(e) => {this.props.action(e,this.props)}}>{this.props.title}</button>
             </div>
         )

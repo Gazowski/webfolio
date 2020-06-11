@@ -71,7 +71,7 @@ class App extends React.Component {
      */
 
     const PROFIL_CONTENT = {
-      class : 'tile profil',
+      class : '--dark',
       id : 'profil',
       button_title : 'Profil',
       title : 'Mon Profil',
@@ -79,11 +79,23 @@ class App extends React.Component {
     }
 
     /**
+     * MON PARCOURS
+     */
+
+    const PARCOURS_CONTENT = {
+      class:'--light',
+      id:'parcours',
+      button_title:'Parcours',
+      title:'Mon Parcours',
+      children:'détails de mes parcours',
+    }
+
+    /**
      * MY SITES
      */
 
     const MY_SITES_CONTENT = {
-      class : 'tile my_sites',
+      class : '--dark',
       id : 'siteWeb',
       button_title : 'Projets',
       title : 'Mes Projets',
@@ -122,7 +134,7 @@ class App extends React.Component {
      */
 
     const MY_WORKS_CONTENT = {
-      class : 'tile my_works',
+      class : '--light',
       id : 'illustrations',
       button_title : 'Illustrations',
       title : 'Mes Illustrations',
@@ -199,15 +211,16 @@ class App extends React.Component {
           <Title {...TITLE}/>
           <nav className='menu-wrapper'>
             <CubeButton {...PROFIL_CONTENT} />
+            <CubeButton {...PARCOURS_CONTENT} />
             <CubeButton {...MY_SITES_CONTENT} />
             <CubeButton {...MY_WORKS_CONTENT} />
           </nav>
         </div>
         <div className='mainContent'>
           <BlockContent {...PROFIL_CONTENT} />
+          <BlockContent {...PARCOURS_CONTENT} />
           <BlockContent {...MY_SITES_CONTENT} />
           <BlockContent {...MY_WORKS_CONTENT} />
-
         </div>
       </div>
     );

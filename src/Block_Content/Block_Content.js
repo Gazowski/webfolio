@@ -4,9 +4,8 @@ import './Block_Content.css'
 
 function BlockContent(data){
     return(
-        <div  id={data.id} className={`blockContent ${data.id}`}>
+        <div  id={data.id} className={`blockContent blockContent${data.class} ${data.id}`}>
             <h2>{data.title}</h2>
-            <div className='content'>{data.text}</div>
             <div>{data.children}</div>
         </div>
     )

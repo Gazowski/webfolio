@@ -1,16 +1,65 @@
 .blockContent{
-    background-color: var(--primary-dark);
-    color:var(--secondary-ligth);
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100); 
     padding:0 2rem;
     width: 100%;
 }
 
+.blockContent--light{
+    background-color: var(--secondary);
+    color:var(--primary-dark);
+}
+
+.blockContent--dark{
+    background-color: var(--primary-dark);
+    color:var(--secondary);
+}
+
 .blockContent h2{
     font-family: var(--FONT_TITLE);
     text-transform: uppercase;
     margin-top: 4rem;
+}
+
+button.btn, a.btn{
+    background-color: transparent;
+    font-family: var(--FONT_TEXT);
+    font-weight: bold;
+    font-size: 1rem;
+    height: 3.5rem;
+    letter-spacing: 3px;
+    margin-right:.5rem;
+    margin-bottom: .5rem;
+    min-width: 7.5rem;
+    padding:1rem;
+    text-decoration: none;
+    text-transform: uppercase; 
+}
+
+.blockContent--light .btn{
+    border:solid 2px var(--primary-dark);
+    color: var(--primary-dark);
+}
+.blockContent--light .btn:hover{
+    background-color: var(--primary-dark);
+    color:var(--secondary);
+    transition: all .4s ease-in-out;
+}
+
+.blockContent--dark .btn{
+    border:solid 2px var(--secondary); 
+    color: var(--secondary);   
+}
+.blockContent--dark .btn:hover{
+    background-color: var(--secondary);
+    color:var(--primary-dark);
+    transition: all .4s ease-in-out;
+}
+
+
+.btn--fullWidth{
+    text-align:left;
+    width:100%;
 }
 
 .profil{
@@ -34,7 +83,41 @@
     padding-left: 25vw;
 }
 
-.siteWeb{
-    color:var(--primary-dark);
-    background-color: var(--secondary);
+@media screen and (min-width:1024px){
+    .blockContent{
+        /* j'ai du le répéter dans le media query de app.css !!!!! */
+        padding: 0; 
+    }
+    
+    .blockContent h2{
+        display:flex;
+        align-items: center;
+
+        font-size: 1.8rem;
+        height: 100%;
+        margin: 0;
+        padding-left: 2rem;
+    }
+
+    .blockContent div{
+        padding: 0 2rem ;
+    }
+    
+    .blockContent--light h2{
+        background-color: var(--primary-dark);
+        color:var(--secondary);
+    }
+
+    .blockContent--dark h2{
+        background-color: var(--secondary);
+        color:var(--primary-dark);
+    }
+
+    .profil{
+        background-image: url('../img/photo-demi-profil.png');
+        background-position: right;
+        background-size: 40vw;
+        background-repeat: no-repeat;
+    }
+
 }
