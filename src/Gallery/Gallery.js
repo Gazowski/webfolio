@@ -1,6 +1,8 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 import './Gallery.css'
 
@@ -48,8 +50,9 @@ class Gallery extends React.Component{
                                 target='_blank'
                                 rel="noopener noreferrer">visiter le site de {this.state.gallery.cieName}</a>
                             : ''}
-                        <button className="carousel-btnClose"
-                            onClick={() => {this.emptyCarousel()}}>X</button>
+                        <button className="btn-close" 
+                            data-js-close-form
+                            onClick={() => {this.emptyCarousel()}}><FontAwesomeIcon icon={faTimes} /></button>
                     </div>
 
                     : ''

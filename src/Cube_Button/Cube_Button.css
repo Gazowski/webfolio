@@ -30,7 +30,7 @@
 
 @media screen and (min-width:1024px){
     .cubeButton{
-
+        padding-right: 2rem;
         transition: all .3s ease-out;
         animation : none;
     }

@@ -60,11 +60,10 @@ h2,h3{
 }
 
 
-
+/* CLASSE */
 .displayNone{
     display: none;
 }
-
 
 /* LAYOUT */
 .main_wrapper{

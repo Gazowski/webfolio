@@ -34,3 +34,10 @@
     margin-bottom:1.5em;
     transform:translateY(-50%);
 }
+
+@media screen and (min-width:1024px){
+    .title{
+        padding-left:4rem;
+    }
+    
+}

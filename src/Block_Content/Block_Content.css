@@ -93,6 +93,24 @@ button.btn, a.btn{
 }
 
 
+.btn-close{
+    border: none;
+    background-color: transparent;
+    color:var(--secondary);
+    font-size: 1.5rem;
+    position: absolute;
+    bottom:1.5rem;
+    right: 1.5rem;
+    padding: initial;
+    transform-origin: center;
+    transition:.5s;
+}
+
+.btn-close:hover{
+    border: none;
+    color: var(--neutral);
+    transform: rotate(.5turn);
+}
 
 @media screen and (min-width:1024px){
     .blockContent{
@@ -107,7 +125,7 @@ button.btn, a.btn{
         font-size: 1.8rem;
         height: 100%;
         margin: 0;
-        padding-left: 2rem;
+        padding-left: 4rem;
     }
 
     .blockContent div{
@@ -129,6 +147,10 @@ button.btn, a.btn{
         background-position: right;
         background-size: 40vw;
         background-repeat: no-repeat;
+    }
+
+    .parcours div{
+        padding-top:3rem;
     }
 
 }

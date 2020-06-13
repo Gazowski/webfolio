@@ -1,6 +1,7 @@
 import Iframe from 'react-iframe'
 import React from 'react'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import './ProjetFrame.css'
 
 class ProjetFrame extends React.Component{
@@ -22,11 +23,11 @@ class ProjetFrame extends React.Component{
                     href={this.props.link} 
                     target='_blank' 
                     rel="noopener noreferrer">voir le site</a>
-                <button 
-                    className='projetIframe-closeButton'
-                    onClick={(e)=>{this.props.closeBtnAction(e)}}>x</button>
+                <button className="btn-close" 
+                    data-js-close-form
+                    onClick={(e)=>{this.props.closeBtnAction(e)}}><FontAwesomeIcon icon={faTimes} /></button>
             </div>
-            <div className='projetIframe-info projetIframe-info--displayNone'>
+            <div className='projetIframe-info'>
                 <h3>{this.props.title}</h3>
                 {this.props.descriptions.map((description) => (
                     <p key={description}>{description}</p>
@@ -37,8 +38,8 @@ class ProjetFrame extends React.Component{
                     ))}
                 </div>
                 <button
-                    className='projetIframe-btnCloseInfo'
-                    onClick={() => {this.toggleInfo()}}>x</button>
+                    className='btn btn-dark'
+                    onClick={() => {this.toggleInfo()}}>Aperçu</button>
             </div>
         </div>
 
