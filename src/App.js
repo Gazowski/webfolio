@@ -12,11 +12,9 @@ import './App.css';
 
 /**
  * A FAIRE : 
- *    - mettre tous les sites statiques en HTTPS !
  *    - ajouter flèche de navigation
- *    - remplacer les btn close
  *    - mettre lien courriel et linkedin sous le titre
- *    - faire l'icon onglet
+ *    - modifier le favicon
  *    - mettre le lien vers le cv
  */
 
