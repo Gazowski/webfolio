@@ -25,7 +25,9 @@ class ProjetFrame extends React.Component{
                     rel="noopener noreferrer">voir le site</a>
                 <button className="btn-close" 
                     data-js-close-form
-                    onClick={(e)=>{this.props.closeBtnAction(e)}}><FontAwesomeIcon icon={faTimes} /></button>
+                    onClick={(e)=>{
+                        this.props.closeBtnAction(e)
+                        this.toggleInfo()}}><FontAwesomeIcon icon={faTimes} /></button>
             </div>
             <div className='projetIframe-info'>
                 <h3>{this.props.title}</h3>

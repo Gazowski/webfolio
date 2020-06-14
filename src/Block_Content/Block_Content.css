@@ -92,16 +92,21 @@ button.btn, a.btn{
     padding-bottom: 3rem;
 }
 
+.projetIframe-info .btn{
+    display: block;
+    margin: 2rem auto;
+}
 
-.btn-close{
+
+button.btn-close{
     border: none;
     background-color: transparent;
     color:var(--secondary);
     font-size: 1.5rem;
     position: absolute;
-    bottom:1.5rem;
-    right: 1.5rem;
-    padding: initial;
+    bottom:1rem;
+    right: 1rem;
+    padding: 0 .35rem;
     transform-origin: center;
     transition:.5s;
 }
@@ -151,6 +156,10 @@ button.btn, a.btn{
 
     .parcours div{
         padding-top:3rem;
+    }
+
+    .blockContent .projetIframe-info{
+        padding: 10rem;
     }
 
 }

@@ -13,7 +13,7 @@
 .cubeButton div{
     color:var(--primary);
     font-family: var(--FONT_BUTTON);
-    font-size : 2rem;
+    font-size : 1.7rem;
     line-height:1.5rem;
     margin:0;
     padding:0;
