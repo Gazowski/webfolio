@@ -1,13 +1,16 @@
 import React from 'react'
 import './Title.css'
 
-function Title(title){
-    return(
-        <div className='title'>
-            <h1>{title.title}</h1>
-            <p>{title.subtitle}</p>
-        </div>      
-    )
+class Title extends React.Component{
+    render(){
+        return(
+            <div className='title'>
+                <h1>{this.title.title}</h1>
+                <p>{this.title.subtitle}</p>
+                <div></div>
+            </div>      
+        )
+    }
 }
 
 export default Title;
