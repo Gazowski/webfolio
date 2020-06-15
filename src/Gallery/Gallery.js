@@ -51,7 +51,6 @@ class Gallery extends React.Component{
                                 rel="noopener noreferrer">visiter le site de {this.state.gallery.cieName}</a>
                             : ''}
                         <button className="btn-close" 
-                            data-js-close-form
                             onClick={() => {this.emptyCarousel()}}><FontAwesomeIcon icon={faTimes} /></button>
                     </div>
 

@@ -24,7 +24,6 @@ class ProjetFrame extends React.Component{
                     target='_blank' 
                     rel="noopener noreferrer">voir le site</a>
                 <button className="btn-close" 
-                    data-js-close-form
                     onClick={(e)=>{
                         this.props.closeBtnAction(e)
                         this.toggleInfo()}}><FontAwesomeIcon icon={faTimes} /></button>
