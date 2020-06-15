@@ -15,12 +15,12 @@ class Title extends React.Component{
             <div className='title'>
                 <h1>{this.props.title}</h1>
                 <p>{this.props.subtitle}</p>
-                <div>
+                {/* <div>
                     <button className="btn btn--iconLight" 
                         onClick={this.openContactForm}>
                         <FontAwesomeIcon icon={faEnvelope}/>
                     </button>
-                </div>
+                </div> */}
                 <ContactForm class="contactForm overlay displayNone"/>      
             </div>
         )
