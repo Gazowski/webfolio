@@ -1,0 +1,20 @@
+input,textarea{
+    border:none;
+    font-family: var(--FONT_TEXT);
+    font-size: 1em;
+    margin-bottom: 1.5rem;
+    outline:none;
+    padding:1rem;
+    width: 100%;
+}
+
+form .btn--dark{
+    border:2px solid var(--secondary);
+    color:var(--secondary);
+}
+
+form .btn--dark:hover{
+    background-color: var(--secondary);
+    color: var(--primary-dark);
+    transition: all ease-out .5s;
+}
