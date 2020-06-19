@@ -35,7 +35,7 @@ class ProjetFrame extends React.Component{
                 ))}
                 <div>
                     {this.props.tags.map((tag) => (
-                        <span>{tag}</span>
+                        <span key={tag}>{tag}</span>
                     ))}
                 </div>
                 <button

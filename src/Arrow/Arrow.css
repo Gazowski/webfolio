@@ -1,0 +1,7 @@
+.btnArrow--light{
+    color:var(--secondary);
+}
+
+.btnArrow--dark{
+    color:var(--primary-dark);
+}
