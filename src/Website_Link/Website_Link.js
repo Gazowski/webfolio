@@ -16,8 +16,13 @@ class WebsiteLink extends React.Component{
           }
     }
 
+    /**
+     * met a jour l'état du component frame : il sera affiché avec les infos 
+     * du site passé en paramètre
+     * @param {} e 
+     * @param {*} siteInfo : objet - info sur le site à afficher
+     */
     handleClick = (e,siteInfo) => {
-        console.log(siteInfo)
         e.preventDefault()
         this.setState({
           iframeClass : 'projetIframe--display', 
@@ -32,7 +37,7 @@ class WebsiteLink extends React.Component{
     e.preventDefault()
     this.setState({ iframeClass : 'projetIframe--none '})
     }
-    
+
     render(){
             return(
                 <div>

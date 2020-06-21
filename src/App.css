@@ -24,9 +24,9 @@
     --primary-dark: black;
     --secondary-light : white;
     --secondary: white;
-    --neutral: #b71955;
-    --color4: hsla(356%, 62%, 73%, 1);
-    --color5: hsla(251%, 72%, 35%, 1);
+    --neutral: hsl(337, 76%, 41%);
+    --color4: hsla(356, 62%, 73%, 1);
+    --color5: hsla(251, 72%, 35%, 1);
 }
 
 *{
@@ -117,7 +117,7 @@ h2,h3{
         'profil'
         'parcours'
         'siteWeb'
-        'content';
+        'illustrations';
 
 }
 
@@ -126,18 +126,40 @@ h2,h3{
     flex-direction: column;
     justify-content: start;
     padding: 0 2rem;
+    position: relative;
 }
 
-.profil{
+
+.profil, .profil .btnArrow{
     grid-area : profil;
 }
 
-.siteWeb{
+.siteWeb, .siteWeb .btnArrow{
     grid-area : siteWeb;
 }
 
-.parcours{
+.parcours, .parcours .btnArrow{
     grid-area : parcours;
+}
+
+.illustrations, .illustrations .btnArrow{
+    grid-area : illustrations;
+}
+
+/*
+    POSITIONNENEMT DES FLÈCHES DE NAVIGATION
+*/
+
+.blockContent a.btnArrow{
+    position: absolute;
+    right:.5rem;
+}
+
+.blockContent a.btnArrow--up{
+    top: 1.5rem;
+}
+.blockContent a.btnArrow--down{
+    bottom:.5rem;
 }
 
 @media screen and (min-width:1024px){
@@ -154,6 +176,19 @@ h2,h3{
         grid-template-columns: repeat(2,1fr);
         align-items: center;
         padding:0;
+        min-height: 100vh;
+    }
+
+    .profil .btnArrow, 
+    .parcours .btnArrow,
+    .siteWeb .btnArrow,
+    .illustrations .btnArrow{
+        grid-area: auto; /*ajouter sinon pas de possibilité de positionner le .btnArrow--top*/
+    }
+
+    .blockContent a.btnArrow--up{
+        align-self: start;
+        top: 1rem;
     }
 }
 

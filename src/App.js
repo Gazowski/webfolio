@@ -31,26 +31,41 @@ class App extends React.Component {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   }
 
+  /**
+   * addContentNavigation: 
+   * ajoute des flêches de navigation vers les sections suivantes et précédantes
+   * @param {object} allContent : tableau avec toutes les sections de contenu et leur détail
+   */
+
   addContentNavigation(allContent){
     console.log(allContent)
-    for(let block in allContent){
-      console.log(block)
+    let i=0;
+    for(let block of allContent){
       let previousSectionId, nextSectionId, arrowColor
-      arrowColor = block.classList.contains('blockContent--dark') ? '--light' : '--dark'
+      arrowColor = block.class === '--light' ? 'light' : 'dark'
       if(block !== allContent[0]){
-        previousSectionId = block.previousElementSibling.id
-        console.log(previousSectionId)
-        return(
-          <Arrow sens='up' section={previousSectionId} color={arrowColor}/>
-        )
+        previousSectionId = allContent[i-1].id
+      } else {
+        previousSectionId = 'top' 
       }
+      block.arrowToPrevious = <Arrow sens='up' 
+                                section={previousSectionId} 
+                                color={arrowColor}/>
+      if(block !== allContent[allContent.length - 1]){
+        nextSectionId = allContent[i+1].id
+        block.arrowToNext = <Arrow sens='down' 
+                              section={nextSectionId} 
+                              color={arrowColor}/>
+      }
+      /* incrément du compteur */
+      i++
     }
   }
   
   render(){
-    
+    this.addContentNavigation(ALL_CONTENTS)    
     return (
-      <div className='main-wrapper'>
+      <div id='top' className='main-wrapper'>
         <div className='header-wrapper'>
           <Title {...TITLE}/>
           <nav className='menu-wrapper'>

@@ -14,14 +14,15 @@ class Title extends React.Component{
     }
     render(){
         return(
-            <div className='title'>
+            <div id='title' className='title'>
                 <h1>{this.props.title}</h1>
                 <p>{this.props.subtitle}</p>
                 <div>
-                    <button className="btn btn--iconLight" 
+                    <a href="mailto:gael_comeau@hotmail.com?subject=J'ai%20vu%20ton%20Webfolio&body=Bonjour%20Ga%C3%ABl%2C%0D%0A%0D%0A"
+                        className="btn btn--iconLight" 
                         /*onClick={this.openContactForm}*/>
                         <FontAwesomeIcon icon={faEnvelope}/>
-                    </button>
+                    </a>
                     <a className="btn btn--iconLight" 
                         href='https://www.linkedin.com/in/gael-comeau-surlinked' 
                         target='_blank'

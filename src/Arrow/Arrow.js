@@ -18,7 +18,7 @@ import './Arrow.css'
 
  function Arrow(props){
      return(
-         <Link className={`btn btnArrow--${props.sens} btnArrow--${props.color}`}
+         <Link className={`btn btnArrow btnArrow--${props.sens} btnArrow--${props.color}`}
             to={props.section}
             spy={true}
             smooth={true}
