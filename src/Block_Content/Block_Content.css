@@ -84,6 +84,7 @@ button.btn, a.btn{
 }
 
 .parcours{
+    min-height: 100vh;
     height: auto;
 }
 
