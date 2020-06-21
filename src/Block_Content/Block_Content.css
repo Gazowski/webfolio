@@ -63,7 +63,7 @@ button.btn, a.btn{
 }
 
 .profil{
-    background-image: url('../img/demi-horizontal-photo-profil.png');
+    background-image: url('../img/demi-horizontal-photo-profil.jpg');
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -149,7 +149,7 @@ button.btn-close{
     }
 
     .profil{
-        background-image: url('../img/photo-demi-profil.png');
+        background-image: url('../img/photo-demi-profil.jpg');
         background-position: right;
         background-size: 40vw;
         background-repeat: no-repeat;

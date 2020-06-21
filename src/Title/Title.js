@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faCodepen } from '@fortawesome/free-brands-svg-icons'
-import ContactForm from "../ContactForm/ContactForm"
+//import ContactForm from "../ContactForm/ContactForm"
 
 import './Title.css'
 
@@ -36,7 +36,7 @@ class Title extends React.Component{
                         <FontAwesomeIcon icon={faCodepen}/>
                     </a>
                 </div>
-                <ContactForm class="contactForm overlay displayNone"/>      
+                {/* <ContactForm class="contactForm overlay displayNone"/>       */}
             </div>
         )
     }
