@@ -10,8 +10,6 @@ import './App.css';
 
 /**
  * A FAIRE : 
- *    - ajouter flèche de navigation
- *    - mettre lien courriel et linkedin sous le titre
  *    - modifier le favicon
  *    - mettre le lien vers le cv
  */
