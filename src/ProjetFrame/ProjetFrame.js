@@ -11,7 +11,6 @@ class ProjetFrame extends React.Component{
     }
   
     render(){
-        console.log(this.props.descriptions)
         return(
         <div className={this.props.iframeClass}>
             <Iframe className="iframe" src={this.props.link}/>

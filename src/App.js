@@ -36,7 +36,6 @@ class App extends React.Component {
    */
 
   addContentNavigation(allContent){
-    console.log(allContent)
     let i=0;
     for(let block of allContent){
       let previousSectionId, nextSectionId, arrowColor

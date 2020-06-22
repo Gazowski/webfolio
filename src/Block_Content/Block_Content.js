@@ -3,7 +3,6 @@ import React from 'react'
 import './Block_Content.css'
 
 function BlockContent(data){
-    console.log(data)
     return(
         <div  id={data.id} className={`blockContent blockContent${data.class} ${data.id}`}>
             {data.arrowToPrevious ? data.arrowToPrevious : ''}
