@@ -63,10 +63,12 @@ button.btn, a.btn{
 }
 
 .profil{
-    background-image: url('../img/demi-horizontal-photo-profil.jpg');
-    background-position: bottom;
+    /* background-image: url('../img/demi-horizontal-photo-profil.jpg');
+    background-position: bottom;*/
+    background-image: url('../img/photo-demi-profil.jpg');
+    background-position: right;
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
 }
 
 .profil .content{
