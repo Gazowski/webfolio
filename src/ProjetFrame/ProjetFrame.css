@@ -32,15 +32,15 @@
     height: 17%;
 }
 
-.projetIframe-closeButton{
+/* .projetIframe-closeButton{
     border: none;
     background-color: transparent;
     color:var(--secondary);
     font-size: 1.5rem;
     position: absolute;
     bottom:1rem;
-    right: 1rem;
-}
+    right: 1rem; 
+}*/
 
 .projetIframe-info{
     background-color: rgba(0,0,0,.85);
@@ -75,4 +75,8 @@
     font-weight: bold;
     padding: .25rem .5rem;
     margin:.25rem;
+}
+
+.projetIframe button.btn-close{
+    z-index: 15;
 }

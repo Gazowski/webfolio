@@ -5,12 +5,16 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import './ProjetFrame.css'
 
 class ProjetFrame extends React.Component{
+    
     toggleInfo(){
         let info = document.querySelector('.projetIframe-info')
         info.classList.toggle('projetIframe-info--displayNone')
     }
   
     render(){
+        let info = document.querySelector('.projetIframe-info')
+        if(info && info.classList.contains('projetIframe-info--displayNone'))
+            info.classList.remove('projetIframe-info--displayNone')
         return(
         <div className={this.props.iframeClass}>
             <Iframe className="iframe" src={this.props.link}/>
@@ -25,7 +29,8 @@ class ProjetFrame extends React.Component{
                 <button className="btn-close" 
                     onClick={(e)=>{
                         this.props.closeBtnAction(e)
-                        this.toggleInfo()}}><FontAwesomeIcon icon={faTimes} /></button>
+                        this.toggleInfo()
+                        }}><FontAwesomeIcon icon={faTimes} /></button>
             </div>
             <div className='projetIframe-info'>
                 <h3>{this.props.title}</h3>
