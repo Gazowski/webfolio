@@ -1,38 +1,40 @@
 import Iframe from 'react-iframe'
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faTimes, faBorderStyle } from '@fortawesome/free-solid-svg-icons'
 import './ProjetFrame.css'
 
 class ProjetFrame extends React.Component{
-    
-    toggleInfo(){
-        let info = document.querySelector('.projetIframe-info')
-        info.classList.toggle('projetIframe-info--displayNone')
+    constructor(props){
+        super(props)
+        this.state = {
+            infoClass : 'fade-in',
+            iframeAnimation : 'fade-in',
+        }
     }
-  
+
     render(){
-        let info = document.querySelector('.projetIframe-info')
-        if(info && info.classList.contains('projetIframe-info--displayNone'))
-            info.classList.remove('projetIframe-info--displayNone')
         return(
-        <div className={this.props.iframeClass}>
+        <div className={`${this.props.iframeClass} ${this.state.iframeAnimation}`}>
             <Iframe className="iframe" src={this.props.link}/>
             <div className="projetIframe-cmd">
                 <button
                     className='btn btn--dark'
-                    onClick={this.toggleInfo}>Info</button>
+                    onClick={()=>{this.setState({ infoClass:'fade-in' })}}>Info</button>
                 <a className='btn btn--dark'
                     href={this.props.link} 
                     target='_blank' 
                     rel="noopener noreferrer">voir le site</a>
                 <button className="btn-close" 
                     onClick={(e)=>{
-                        this.props.closeBtnAction(e)
-                        this.toggleInfo()
+                            this.setState({iframeAnimation : 'fade-out'})
+                            this.setState({ infoClass : 'fade-in' })
+                            this.props.closeBtnAction(e)
+                            setTimeout(()=>{
+                                this.setState({ iframeAnimation : '' })},500)
                         }}><FontAwesomeIcon icon={faTimes} /></button>
             </div>
-            <div className='projetIframe-info'>
+            <div className={`projetIframe-info ${this.state.infoClass}`}>
                 <h3>{this.props.title}</h3>
                 {this.props.descriptions.map((description) => (
                     <p key={description}>{description}</p>
@@ -44,7 +46,11 @@ class ProjetFrame extends React.Component{
                 </div>
                 <button
                     className='btn btn-dark'
-                    onClick={() => {this.toggleInfo()}}>Aperçu</button>
+                    onClick={() => {
+                        this.setState({infoClass : ' fade-out'})
+                        setTimeout((e)=>{
+                            this.setState({ infoClass : 'projetIframe-info--displayNone fade-in' })},500) }}
+                    >Aperçu</button>
             </div>
         </div>
 

@@ -34,8 +34,15 @@ class WebsiteLink extends React.Component{
       }
         
     handleCloseBtn = (e) =>{
-    e.preventDefault()
-    this.setState({ iframeClass : 'projetIframe--none '})
+        e.preventDefault()
+        setTimeout(()=>{
+            this.setState({ 
+                iframeClass : 'projetIframe--none ',
+                linkToDisplay : '',
+                projectTitle : '',
+                projectDescriptions : [],
+                projectTags : [],
+            })},500)    
     }
 
     render(){

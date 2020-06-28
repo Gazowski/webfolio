@@ -20,7 +20,7 @@ const PROFIL_CONTENT = {
     class : '--dark',
     id : 'profil',
     button_title : 'Profil',
-    title : 'Mon Profil',
+    title : <h2>Mon <br className='lineBr'/>Profil</h2>,
     // text : ,
 }
 
@@ -32,7 +32,7 @@ const PARCOURS_CONTENT = {
     class:'--light',
     id:'parcours',
     button_title:'Parcours',
-    title:'Mon Parcours',
+    title:<h2>Mon <br className='lineBr'/>Parcours</h2>,
     children:<img src={CV} alt="CV de l'auteur"/>,
 }
 
@@ -44,7 +44,7 @@ const MY_SITES_CONTENT = {
     class : '--dark',
     id : 'siteWeb',
     button_title : 'Projets',
-    title : 'Mes Projets',
+    title : <h2>Mes <br className='lineBr'/>Projets</h2>,
     children : <WebsiteLink allSites={[
         {
             key:'01',
@@ -78,7 +78,7 @@ const MY_WORKS_CONTENT = {
     class : '--light',
     id : 'illustrations',
     button_title : 'Illustrations',
-    title : 'Mes Illustrations',
+    title : <h2>Mes <br className='lineBr'/>illustrations</h2>,
     children : <Gallery galleries={[
         {
         title : 'Pour une application',
@@ -120,26 +120,27 @@ const MY_WORKS_CONTENT = {
         {
         title : 'Pour un club sportif', 
         images :[
-        { 
-            id: 1, 
-            link: './img/carousel/snl/camion_cote1.png',
-            alt: 'illustration camion coté droit',
-        },
-        { 
-            id: 2, 
-            link: './img/carousel/snl/affiche_jeux.jpg',
-            alt: 'Affiche pour les Matchs de la Nautique',
-        },
-        {
-            id:3,
-            link: './img/carousel/snl/combine-1.jpg',
-            alt: 'affiche pour l\'épreuve du combiné',
-        },
-        {
-            id:4,
-            link: './img/carousel/snl/affiche_finale.jpg',
-            alt: 'affiche pour la finale de joute',
-        }]
+            { 
+                id: 2, 
+                link: './img/carousel/snl/affiche_jeux.jpg',
+                alt: 'Affiche pour les Matchs de la Nautique',
+            },
+            {
+                id:3,
+                link: './img/carousel/snl/combine-1.jpg',
+                alt: 'affiche pour l\'épreuve du combiné',
+            },
+            {
+                id:4,
+                link: './img/carousel/snl/affiche_finale.jpg',
+                alt: 'affiche pour la finale de joute',
+            },
+            { 
+                id: 1, 
+                link: './img/carousel/snl/camion_cote1.jpg',
+                alt: 'illustration camion coté droit',
+            },
+        ]
         },
 
     ] }/>,

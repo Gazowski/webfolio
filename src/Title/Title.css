@@ -8,6 +8,7 @@
     color:var(--secondary);
     font-size: 3em;
     margin-bottom: 0;
+    margin-top: 0;
     text-shadow: 0 5px var(--primary-dark);
 }
 
@@ -51,4 +52,8 @@
         padding-left:4rem;
     }
     
+    .title .btn--iconLight{
+        margin-top:3rem;
+        margin-bottom: 1rem;
+    }
 }

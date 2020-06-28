@@ -9,15 +9,10 @@ import './Gallery.css'
 class Gallery extends React.Component{
     constructor(props){
         super(props)
-        this.state = { gallery : '', }
-    }
-
-    displayGallery(gallerytoDisplay){
-        this.setState({ gallery : gallerytoDisplay })
-    }
-
-    emptyCarousel(){
-        this.setState({ gallery : '' })
+        this.state = { 
+            gallery : '', 
+            galleryAnimation : '' ,
+        }
     }
 
     render(){
@@ -26,10 +21,13 @@ class Gallery extends React.Component{
                 {this.props.galleries.map((gallery) => (
                     <button key={gallery.title}
                         className="btn btn--fullWidth"
-                        onClick={() => {this.displayGallery(gallery)}}>{gallery.title}</button>
+                        onClick={() => {this.setState({ 
+                            gallery : gallery,
+                            galleryAnimation : 'fade-in',
+                         })}}>{gallery.title}</button>
                 ))}
                 {this.state.gallery 
-                    ? <div className='carouselWrapper'>
+                    ? <div className={`carouselWrapper ${this.state.galleryAnimation}`}>
                         <Carousel 
                             autoPlay
                             infiniteLoop
@@ -50,7 +48,9 @@ class Gallery extends React.Component{
                                 rel="noopener noreferrer">visiter le site de {this.state.gallery.cieName}</a>
                             : ''}
                         <button className="btn-close" 
-                            onClick={() => {this.emptyCarousel()}}><FontAwesomeIcon icon={faTimes} /></button>
+                            onClick={() => {
+                                this.setState({ galleryAnimation : 'fade-out'})
+                                setTimeout(()=>{this.setState({ gallery : '' })},500)}}><FontAwesomeIcon icon={faTimes} /></button>
                     </div>
 
                     : ''
