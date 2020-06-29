@@ -1,7 +1,7 @@
 import Iframe from 'react-iframe'
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimes, faBorderStyle } from '@fortawesome/free-solid-svg-icons'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import './ProjetFrame.css'
 
 class ProjetFrame extends React.Component{
