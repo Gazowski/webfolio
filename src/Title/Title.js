@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn , faGithub, faGithubAlt } from '@fortawesome/free-brands-svg-icons'
 import { faCodepen } from '@fortawesome/free-brands-svg-icons'
 //import ContactForm from "../ContactForm/ContactForm"
 
@@ -34,6 +34,12 @@ class Title extends React.Component{
                         target='_blank'
                         rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faCodepen}/>
+                    </a>
+                    <a className="btn btn--iconLight" 
+                        href='https://github.com/Gazowski' 
+                        target='_blank'
+                        rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faGithub}/>
                     </a>
                 </div>
                 {/* <ContactForm class="contactForm overlay displayNone"/>       */}
