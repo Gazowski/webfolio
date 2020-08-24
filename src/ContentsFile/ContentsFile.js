@@ -48,7 +48,7 @@ const MY_SITES_CONTENT = {
     children : <WebsiteLink allSites={[
         {
             key:'01',
-            title:'Gestion de stage',
+            title:'Gestion de stages',
             link: 'https://siteec2.gaelsurleweb.ca/ajdm',
             description: ["Premier projet étudiant individuel."," Première expérience avec PHP couplé avec Javascript.","Gestion de base données MYSQL en MVC."],
             tags: ['PHP','MySQL','Javascript','SASS','MVC'],
