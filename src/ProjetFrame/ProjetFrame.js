@@ -10,6 +10,7 @@ class ProjetFrame extends React.Component{
         this.state = {
             infoClass : 'fade-in',
             iframeAnimation : 'fade-in',
+            isInMaintenance: this.props.maintenance ? 'btn--inactived' : '',
         }
     }
 
@@ -45,12 +46,12 @@ class ProjetFrame extends React.Component{
                     ))}
                 </div>
                 <button
-                    className='btn btn-dark'
+                    className={`btn btn-dark ${this.props.maintenance ? 'btn--inactived' : ''}`}
                     onClick={() => {
                         this.setState({infoClass : ' fade-out'})
                         setTimeout((e)=>{
                             this.setState({ infoClass : 'projetIframe-info--displayNone fade-in' })},500) }}
-                    >Aperçu</button>
+                    >{this.props.maintenance ? 'Site en maintenance':'Aperçu'}</button>
             </div>
         </div>
 

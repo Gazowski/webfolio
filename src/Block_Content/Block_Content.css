@@ -131,6 +131,12 @@ button.btn-close{
     transform: rotate(.5turn);
 }
 
+.btn.btn--inactived {
+    color: var(--grey);
+    border-color: var(--grey);
+    pointer-events: none;
+}
+
 .lineBr{
     display: none;
 }
