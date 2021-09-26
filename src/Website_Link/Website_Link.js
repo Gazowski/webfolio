@@ -14,6 +14,7 @@ class WebsiteLink extends React.Component {
             projectDescriptions : [],
             projectTags : [],
             maintenance: '',
+            video: '',
           }
     }
 
@@ -32,6 +33,7 @@ class WebsiteLink extends React.Component {
           projectDescriptions : siteInfo.description,
           projectTags : siteInfo.tags,
           maintenance : siteInfo.maintenance,
+          video : siteInfo.video,
          })
       }
         
@@ -45,6 +47,7 @@ class WebsiteLink extends React.Component {
                 projectDescriptions : [],
                 projectTags : [],
                 maintenance: '',
+                video: '',
             })},500)    
     }
 
@@ -69,7 +72,8 @@ class WebsiteLink extends React.Component {
                         descriptions={this.state.projectDescriptions}
                         tags={this.state.projectTags}
                         closeBtnAction={(e) => {this.handleCloseBtn(e)}}
-                        maintenance={this.state.maintenance}/>
+                        maintenance={this.state.maintenance}
+                        video={this.state.video}/>
                 </div>
                 
         )

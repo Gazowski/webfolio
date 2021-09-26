@@ -49,10 +49,10 @@ const MY_SITES_CONTENT = {
         {
             key:'01',
             title:'Gestion de stages',
-            link: 'https://siteec2.gaelsurleweb.ca/ajdm',
+            link: './img/video/video-stages.mp4',
             description: ["Premier projet étudiant individuel."," Première expérience avec PHP couplé avec Javascript.","Gestion de base données MYSQL en MVC."],
             tags: ['PHP','MySQL','Javascript','SASS','MVC'],
-            maintenance: true,
+            video: true,
         },
         {
             key:'02',
