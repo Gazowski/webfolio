@@ -64,10 +64,10 @@ const MY_SITES_CONTENT = {
         {
             key:'03',
             title:'Boutique en ligne',
-            link: 'https://siteec2.gaelsurleweb.ca/boutique-vaisselle',
+            link: './img/video/video-vaisselle.mp4',
             description:["Travail étudiant.","Programmation Javascript avec appel Ajax.","Gestion d'une base de données avec PHP / MYSQL.","Utilisation de GRID et SASS pour le style."],
             tags: ['POO','Javascript','AJAX','SASS'],
-            maintenance: true,
+            video: true,
         },
     ]}/>,
 }
