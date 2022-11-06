@@ -2,7 +2,7 @@
     transform-style: preserve-3d;
     transform-origin:top;
     /* transition: all .3s ease-out; */
-    animation : 1s ease-out .3s both rotateCube;
+    animation : .3s ease-out .3s both rotateCube;
 }
 
 .cubeButton:hover{
@@ -13,7 +13,7 @@
 .cubeButton div{
     color:var(--primary);
     font-family: var(--FONT_BUTTON);
-    font-size : 1.7rem;
+    font-size : 2rem;
     line-height:1.5rem;
     margin:0;
     padding:0;
@@ -24,8 +24,8 @@
 .cubeButton .cubeButton--bottom{
     color:var(--neutral);
     /* text-decoration: underline; */
-    transform-origin:top;
-    transform:rotatex(-90deg) translateY(.25rem);
+    transform-origin:center;
+    transform:rotatex(-90deg) translateY(1rem);
 }
 
 @media screen and (min-width:1024px){
@@ -34,13 +34,18 @@
         transition: all .3s ease-out;
         animation : none;
     }
+
+    .cubeButton div {
+        font-size: clamp(2.6rem, 3.7vw, 4.4rem);
+        line-height: .6;
+    }
     
     .cubeButton:hover{
-        transform: translatez(-1.5rem) rotatex(90deg);
+        transform: rotatex(90deg);
     }
 }
 
 @keyframes rotateCube{
-    from {transform:translatez(0) rotateX(0)}
-    to {transform:translatez(-1.5em) rotateX(90deg)}
+    from {transform: rotateX(0)}
+    to {transform: rotateX(90deg)}
 }

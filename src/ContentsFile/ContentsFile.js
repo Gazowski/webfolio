@@ -2,14 +2,14 @@ import React from 'react'
 import WebsiteLink from '../Website_Link/Website_Link'
 import Gallery from '../Gallery/Gallery'
 
-import CV from '../img/CV.svg'
+import CV from '../img/cv-frise.svg'
 
 /**
  * TITRE
  */
 export const TITLE = {
     title : 'GAëLC.',
-    subtitle: 'Développeur WEB'
+    subtitle: ['Gaël Comeau', 'Développeur WEB']
 }
 
 /**

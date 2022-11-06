@@ -16,7 +16,11 @@ class Title extends React.Component{
         return(
             <div id='title' className='title'>
                 <h1>{this.props.title}</h1>
-                <p>{this.props.subtitle}</p>
+                <div class="subtitle">
+                    {this.props.subtitle.map((line) => (
+                        <p>{line}</p>
+                    ))}
+                </div>
                 <div>
                     <a href="mailto:gael_comeau@hotmail.com?subject=J'ai%20vu%20ton%20Webfolio&body=Bonjour%20Ga%C3%ABl%2C%0D%0A%0D%0A"
                         className="btn btn--iconLight" 

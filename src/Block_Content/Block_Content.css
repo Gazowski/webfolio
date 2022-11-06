@@ -19,6 +19,7 @@
     font-family: var(--FONT_TITLE);
     text-transform: uppercase;
     margin-top: 4rem;
+    font-size: 2rem;
 }
 
 button.btn, a.btn{
@@ -186,11 +187,11 @@ button.btn-close{
         display:flex;
         align-items: center;
 
-        font-size: 1.8rem;
+        font-size: clamp(1.8rem, 3.37vw, 4rem);
         height: 100%;
         margin: 0;
         padding-left: 4rem;
-        line-height: 2.25rem;
+        line-height: 1.2;
     }
 
     .blockContent div{
