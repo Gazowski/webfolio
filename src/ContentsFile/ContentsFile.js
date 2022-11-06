@@ -50,8 +50,9 @@ const MY_SITES_CONTENT = {
             key:'01',
             title:'Gestion de stage',
             link: 'https://siteec2.gaelsurleweb.ca/ajdm',
-            description: ["Premier projet étudiant individuel."," Première expérience avec PHP couplé avec Javascript.","Gestion de base données MYSQL en MVC."],
+            description: ["LA BASE DE DONNÉES N'ÉTANT PLUS ACCESSIBLE, CE SITE N'EST PLUS ACTIF","Premier projet étudiant individuel."," Première expérience avec PHP couplé avec Javascript.","Gestion de base données MYSQL en MVC."],
             tags: ['PHP','MySQL','Javascript','SASS','MVC'],
+            maintenance: true,
         },
         {
             key:'02',
@@ -64,8 +65,9 @@ const MY_SITES_CONTENT = {
             key:'03',
             title:'Boutique en ligne',
             link: 'https://siteec2.gaelsurleweb.ca/boutique-vaisselle',
-            description:["Travail étudiant.","Programmation Javascript avec appel Ajax.","Gestion d'une base de données avec PHP / MYSQL.","Utilisation de GRID et SASS pour le style."],
+            description:["LA BASE DE DONNÉES N'ÉTANT PLUS ACCESSIBLE, CE SITE N'EST PLUS ACTIF","Travail étudiant.","Programmation Javascript avec appel Ajax.","Gestion d'une base de données avec PHP / MYSQL.","Utilisation de GRID et SASS pour le style."],
             tags: ['POO','Javascript','AJAX','SASS'],
+            maintenance: true,
         },
     ]}/>,
 }
