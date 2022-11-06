@@ -45,7 +45,7 @@ class ProjetFrame extends React.Component{
                     ))}
                 </div>
                 <button
-                    className='btn btn-dark'
+                    className={`btn btn-dark ${this.props.maintenance ? 'btn--inactived' : ''}`}
                     onClick={() => {
                         this.setState({infoClass : ' fade-out'})
                         setTimeout((e)=>{

@@ -6,7 +6,7 @@
 .title h1{
     font-family: var(--FONT_TITLE);
     color:var(--secondary);
-    font-size: 3em;
+    font-size: 3rem;
     margin-bottom: 0;
     margin-top: 0;
     text-shadow: 0 5px var(--primary-dark);
@@ -16,12 +16,16 @@
     font-variant: small-caps;
 }
 
-.title p{
+.subtitle{
     color:var(--secondary);
     font-family: var(--FONT_TEXT);
     font-size: 1rem;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle p {
+    margin: 0;
 }
 
 .title .btn--iconLight{
@@ -52,8 +56,19 @@
         padding-left:4rem;
     }
     
+    .title h1 {
+        font-size: clamp(4rem, 5.47vw, 6.5rem);
+    }
+
+    .title .subtitle {
+        font-size: clamp(1.4rem, 1.3vw, 1.6rem);
+    }
+    
     .title .btn--iconLight{
-        margin-top:3rem;
+        margin-top: 1.2rem;
         margin-bottom: 1rem;
+        transform: scale(1.2);
+        transform-origin: center left;
+        margin-right: 1rem;
     }
 }
