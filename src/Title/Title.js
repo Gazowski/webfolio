@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedinIn , faGithub, faGithubAlt } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn , faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faCodepen } from '@fortawesome/free-brands-svg-icons'
 //import ContactForm from "../ContactForm/ContactForm"
 
@@ -16,9 +16,9 @@ class Title extends React.Component{
         return(
             <div id='title' className='title'>
                 <h1>{this.props.title}</h1>
-                <div class="subtitle">
-                    {this.props.subtitle.map((line) => (
-                        <p>{line}</p>
+                <div className="subtitle">
+                    {this.props.subtitle.map((line,index) => (
+                        <p key={index}>{line}</p>
                     ))}
                 </div>
                 <div>

@@ -177,7 +177,7 @@ button.btn-close{
 	}
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1024px) {
     .blockContent{
         /* j'ai du le répéter dans le media query de app.css !!!!! */
         padding: 0; 
@@ -219,11 +219,13 @@ button.btn-close{
         padding-top:3rem;
     }
 
-    .blockContent .projetIframe-info{
-        padding: 10rem;
-    }
-
     .lineBr{
         display: inline;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .blockContent .projetIframe-info{
+        padding: 10rem;
     }
 }

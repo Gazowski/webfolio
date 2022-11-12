@@ -50,7 +50,7 @@
 .projetIframe-info{
     background-color: rgba(0,0,0,.85);
     color:var(--secondary);
-    padding:5rem;
+    padding:0 5rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -81,7 +81,7 @@
     padding-left: 0;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1240px) {
     .projetIframe-info__wrapper {
         flex-direction: row;
         align-items: center;

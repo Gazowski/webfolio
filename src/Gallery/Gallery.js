@@ -28,12 +28,13 @@ class Gallery extends React.Component{
                 ))}
                 {this.state.gallery 
                     ? <div className={`carouselWrapper ${this.state.galleryAnimation}`}>
-                        <Carousel 
-                            autoPlay
-                            infiniteLoop
-                            stopOnHover
+                        <Carousel
+                            infiniteLoop 
+                            stopOnHover={false}
                             showStatus={false}
                             showThumbs={false}
+                            centerMode
+                            centerSlidePercentage={60}
                             interval='4000'
                             transitionTime='1000'>
                             {this.state.gallery.images.map((image) => (

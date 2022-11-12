@@ -68,4 +68,24 @@
     right: 3rem;
 }
 
+.carousel.carousel-slider .control-arrow {
+    --carousel-arrow-size: 48px;
+    top: 50%;
+    bottom: auto;
+    background-color: black;
+    width: var(--carousel-arrow-size);
+    height: var(--carousel-arrow-size);
+    border-radius: calc(var(--carousel-arrow-size) / 2);
+    opacity: .5;
+}
+
+.carousel .slider-wrapper {
+    --carousel-transparence-offset-start: 5%;
+    --carousel-transparence-offset-stop: calc(100% - var(--carousel-transparence-offset-start));
+    mask-image: linear-gradient(
+        to right, 
+        transparent, 
+        black var(--carousel-transparence-offset-start)  var(--carousel-transparence-offset-stop), 
+        transparent);
+}
 
